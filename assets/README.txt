@@ -1,7 +1,9 @@
-Put personal assets in this folder.
+Personal photo:
+- Put your homepage portrait at assets/profile.jpg
 
-Recommended:
-- avatar.jpg   -> profile photo
-- cv.pdf       -> optional CV if you later add a CV button
+Daily-life photos:
+- assets/life-01.jpg
+- assets/life-02.jpg
+- assets/life-03.jpg
 
-Do not commit private documents or files containing information you do not want publicly searchable.
+If these images do not exist, the website automatically shows elegant placeholders.

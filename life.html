@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="zh-CN" data-lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Frank Li — daily life, travel, and photography." />
+  <title>Frank Li | Daily Life</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div class="ink-bg" aria-hidden="true"><span class="ink-cloud one"></span><span class="ink-cloud two"></span><span class="ink-cloud three"></span><span class="ink-mountain left"></span><span class="ink-mountain right"></span></div>
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a class="brand" href="./index.html"><span class="brand-seal">L</span><span class="brand-name">Frank Li</span></a>
+      <nav class="main-nav">
+        <a href="./index.html"><span class="i18n-zh">首页</span><span class="i18n-en">Home</span></a>
+        <a href="./cv.html"><span class="i18n-zh">个人简历</span><span class="i18n-en">CV</span></a>
+        <a href="./publications.html"><span class="i18n-zh">学术成果</span><span class="i18n-en">Academic Work</span></a>
+        <a href="./writing.html"><span class="i18n-zh">自由写作</span><span class="i18n-en">Writing</span></a>
+        <a href="./life.html" aria-current="page"><span class="i18n-zh">日常生活</span><span class="i18n-en">Life</span></a>
+        <div class="mobile-languages"><button class="lang-btn" data-lang="zh">中文</button><button class="lang-btn" data-lang="en">EN</button></div>
+      </nav>
+      <div class="nav-actions"><button class="lang-btn" data-lang="zh">中文</button><span>/</span><button class="lang-btn" data-lang="en">EN</button></div>
+      <button class="menu-btn" type="button" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero"><div class="page-width page-hero-grid"><div class="reveal"><p class="eyebrow">DAILY LIFE</p><h1><span class="i18n-zh">日常生活</span><span class="i18n-en">Daily Life</span></h1><p><span class="i18n-zh">这里用于记录照片与文字：旅行、园林、博物馆、城市、朋友以及一些普通但值得记住的日常。</span><span class="i18n-en">A place for photographs and short reflections on travel, gardens, museums, cities, friends, and ordinary moments worth remembering.</span></p></div><div class="page-note reveal"><span class="i18n-zh">把照片放进 assets 文件夹并按 README 的文件名保存，页面会自动显示；没有照片时会保留占位框。</span><span class="i18n-en">Place images in the assets folder using the filenames documented in README. Placeholders remain visible until you add them.</span></div></div></section>
+
+    <section class="section page-width">
+      <div class="section-heading reveal"><span class="section-index">01</span><div><p class="kicker">PHOTO JOURNAL</p><h2><span class="i18n-zh">照片与记录</span><span class="i18n-en">Photo Journal</span></h2></div></div>
+      <div class="life-grid">
+        <article class="life-card large reveal"><div class="life-photo"><img src="./assets/life-01.jpg" alt="Daily life photo 1" data-fallback="life-fallback-1"><div class="photo-fallback" id="life-fallback-1"><div><strong>01</strong><span>assets/life-01.jpg</span></div></div></div><div class="life-copy"><span class="date">YYYY.MM</span><h3><span class="i18n-zh">记录标题</span><span class="i18n-en">Journal Title</span></h3><p><span class="i18n-zh">这里写一段简短文字，可以是地点、当时的感受，或者一段小故事。</span><span class="i18n-en">Add a short note about the place, the moment, or a small story behind the photograph.</span></p></div></article>
+        <article class="life-card small reveal"><div class="life-photo"><img src="./assets/life-02.jpg" alt="Daily life photo 2" data-fallback="life-fallback-2"><div class="photo-fallback" id="life-fallback-2"><div><strong>02</strong><span>assets/life-02.jpg</span></div></div></div><div class="life-copy"><span class="date">YYYY.MM</span><h3><span class="i18n-zh">另一段日常</span><span class="i18n-en">Another Moment</span></h3><p><span class="i18n-zh">适合放园林、博物馆、城市散步或旅行照片。</span><span class="i18n-en">Suitable for gardens, museums, city walks, or travel photographs.</span></p></div></article>
+        <article class="life-card full reveal"><div class="life-photo"><img src="./assets/life-03.jpg" alt="Daily life photo 3" data-fallback="life-fallback-3"><div class="photo-fallback" id="life-fallback-3"><div><strong>03</strong><span>assets/life-03.jpg</span></div></div></div><div class="life-copy"><span class="date">YYYY.MM</span><h3><span class="i18n-zh">长一点的照片故事</span><span class="i18n-en">A Longer Photo Story</span></h3><p><span class="i18n-zh">这个横向模块适合放一组经历里更完整的文字。以后你也可以继续复制这个卡片，扩展成更多记录。</span><span class="i18n-en">This horizontal module is designed for a longer story. You can duplicate the card later to expand the page with more entries.</span></p></div></article>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="page-width footer-row"><span>© Frank Li</span><span>Daily Life</span></div></footer>
+  <script src="./script.js"></script>
+</body>
+</html>
