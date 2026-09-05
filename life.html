@@ -26,18 +26,42 @@
   </header>
 
   <main>
-    <section class="page-hero"><div class="page-width page-hero-grid"><div class="reveal"><p class="eyebrow">DAILY LIFE</p><h1><span class="i18n-zh">日常生活</span><span class="i18n-en">Daily Life</span></h1><p><span class="i18n-zh">这里用于记录照片与文字：旅行、园林、博物馆、城市、朋友以及一些普通但值得记住的日常。</span><span class="i18n-en">A place for photographs and short reflections on travel, gardens, museums, cities, friends, and ordinary moments worth remembering.</span></p></div><div class="page-note reveal"><span class="i18n-zh">把照片放进 assets 文件夹并按 README 的文件名保存，页面会自动显示；没有照片时会保留占位框。</span><span class="i18n-en">Place images in the assets folder using the filenames documented in README. Placeholders remain visible until you add them.</span></div></div></section>
-
-    <section class="section page-width">
-      <div class="section-heading reveal"><span class="section-index">01</span><div><p class="kicker">PHOTO JOURNAL</p><h2><span class="i18n-zh">照片与记录</span><span class="i18n-en">Photo Journal</span></h2></div></div>
-      <div class="life-grid">
-        <article class="life-card large reveal"><div class="life-photo"><img src="./assets/life-01.jpg" alt="Daily life photo 1" data-fallback="life-fallback-1"><div class="photo-fallback" id="life-fallback-1"><div><strong>01</strong><span>assets/life-01.jpg</span></div></div></div><div class="life-copy"><span class="date">YYYY.MM</span><h3><span class="i18n-zh">记录标题</span><span class="i18n-en">Journal Title</span></h3><p><span class="i18n-zh">这里写一段简短文字，可以是地点、当时的感受，或者一段小故事。</span><span class="i18n-en">Add a short note about the place, the moment, or a small story behind the photograph.</span></p></div></article>
-        <article class="life-card small reveal"><div class="life-photo"><img src="./assets/life-02.jpg" alt="Daily life photo 2" data-fallback="life-fallback-2"><div class="photo-fallback" id="life-fallback-2"><div><strong>02</strong><span>assets/life-02.jpg</span></div></div></div><div class="life-copy"><span class="date">YYYY.MM</span><h3><span class="i18n-zh">另一段日常</span><span class="i18n-en">Another Moment</span></h3><p><span class="i18n-zh">适合放园林、博物馆、城市散步或旅行照片。</span><span class="i18n-en">Suitable for gardens, museums, city walks, or travel photographs.</span></p></div></article>
-        <article class="life-card full reveal"><div class="life-photo"><img src="./assets/life-03.jpg" alt="Daily life photo 3" data-fallback="life-fallback-3"><div class="photo-fallback" id="life-fallback-3"><div><strong>03</strong><span>assets/life-03.jpg</span></div></div></div><div class="life-copy"><span class="date">YYYY.MM</span><h3><span class="i18n-zh">长一点的照片故事</span><span class="i18n-en">A Longer Photo Story</span></h3><p><span class="i18n-zh">这个横向模块适合放一组经历里更完整的文字。以后你也可以继续复制这个卡片，扩展成更多记录。</span><span class="i18n-en">This horizontal module is designed for a longer story. You can duplicate the card later to expand the page with more entries.</span></p></div></article>
+    <section class="page-hero">
+      <div class="page-width page-hero-grid">
+        <div class="reveal"><p class="eyebrow">DAILY LIFE · PHOTO ALBUMS</p><h1><span class="i18n-zh">日常生活</span><span class="i18n-en">Daily Life</span></h1><p><span class="i18n-zh">这里用于记录旅行、城市、园林、博物馆与海外交流中的照片和文字。剑桥暑校与奥斯汀寒校各自建立独立小专辑，并可从个人简历直接跳转。</span><span class="i18n-en">A place for travel, cities, gardens, museums, and moments from overseas programs. Cambridge and Austin now have dedicated mini albums that can be opened directly from the CV.</span></p></div>
+        <div class="page-note reveal"><span class="i18n-zh">照片建议按专辑放进 assets/life/cambridge 与 assets/life/austin。以后可以继续新增更多城市或主题专辑。</span><span class="i18n-en">Store album photos in assets/life/cambridge and assets/life/austin. More city- or theme-based albums can be added later.</span></div>
       </div>
     </section>
+
+    <section class="section page-width">
+      <div class="section-heading reveal"><span class="section-index">01</span><div><p class="kicker">ALBUM INDEX</p><h2><span class="i18n-zh">海外交流专辑</span><span class="i18n-en">Overseas Albums</span></h2></div></div>
+      <div class="album-index">
+        <a class="album-index-card reveal" href="#cambridge"><span class="album-no">01</span><div><h3><span class="i18n-zh">剑桥暑校生活</span><span class="i18n-en">Cambridge Summer</span></h3><p>Cambridge · 2025.08</p></div><span class="arrow">↓</span></a>
+        <a class="album-index-card reveal" href="#austin"><span class="album-no">02</span><div><h3><span class="i18n-zh">奥斯汀寒校生活</span><span class="i18n-en">Austin Winter</span></h3><p>Austin · 2026.01–02</p></div><span class="arrow">↓</span></a>
+      </div>
+    </section>
+
+    <section class="section page-width album-section" id="cambridge">
+      <div class="album-heading reveal"><div><p class="kicker">CAMBRIDGE · 2025.08</p><h2><span class="i18n-zh">剑桥暑校生活</span><span class="i18n-en">Cambridge Summer Program</span></h2></div><p><span class="i18n-zh">这里预留给剑桥期间的课程、学院、城市散步、朋友与日常照片。正文可以写成短记，也可以以后扩展为完整旅行日志。</span><span class="i18n-en">Reserved for classes, colleges, city walks, friends, and everyday moments in Cambridge. The text can remain brief or later grow into a full travel journal.</span></p></div>
+      <div class="album-gallery">
+        <figure class="album-photo tall reveal"><img src="./assets/life/cambridge/01.jpg" alt="Cambridge album photo 1" data-fallback="cam-1"><div class="photo-fallback" id="cam-1"><div><strong>01</strong><span>assets/life/cambridge/01.jpg</span></div></div></figure>
+        <figure class="album-photo reveal"><img src="./assets/life/cambridge/02.jpg" alt="Cambridge album photo 2" data-fallback="cam-2"><div class="photo-fallback" id="cam-2"><div><strong>02</strong><span>assets/life/cambridge/02.jpg</span></div></div></figure>
+        <figure class="album-photo reveal"><img src="./assets/life/cambridge/03.jpg" alt="Cambridge album photo 3" data-fallback="cam-3"><div class="photo-fallback" id="cam-3"><div><strong>03</strong><span>assets/life/cambridge/03.jpg</span></div></div></figure>
+      </div>
+      <div class="album-note reveal"><span class="date">2025.08</span><h3><span class="i18n-zh">专辑文字占位</span><span class="i18n-en">Album note placeholder</span></h3><p><span class="i18n-zh">以后可以在这里写剑桥暑校最值得记住的几件事，例如课程讨论、学院生活、城市漫步，或者某张照片背后的故事。</span><span class="i18n-en">Use this space for memorable moments from the Cambridge program: class discussions, college life, city walks, or the story behind a particular photograph.</span></p></div>
+    </section>
+
+    <section class="section page-width album-section" id="austin">
+      <div class="album-heading reveal"><div><p class="kicker">AUSTIN · 2026.01–02</p><h2><span class="i18n-zh">奥斯汀寒校生活</span><span class="i18n-en">Austin Winter Program</span></h2></div><p><span class="i18n-zh">这里预留给奥斯汀学习、城市生活、自然风景与团队活动。相册与个人简历中的 UT Austin 经历相互链接。</span><span class="i18n-en">Reserved for study, city life, landscapes, and team activities in Austin. The album is cross-linked with the UT Austin entry on the CV.</span></p></div>
+      <div class="album-gallery reverse">
+        <figure class="album-photo reveal"><img src="./assets/life/austin/01.jpg" alt="Austin album photo 1" data-fallback="aus-1"><div class="photo-fallback" id="aus-1"><div><strong>01</strong><span>assets/life/austin/01.jpg</span></div></div></figure>
+        <figure class="album-photo tall reveal"><img src="./assets/life/austin/02.jpg" alt="Austin album photo 2" data-fallback="aus-2"><div class="photo-fallback" id="aus-2"><div><strong>02</strong><span>assets/life/austin/02.jpg</span></div></div></figure>
+        <figure class="album-photo reveal"><img src="./assets/life/austin/03.jpg" alt="Austin album photo 3" data-fallback="aus-3"><div class="photo-fallback" id="aus-3"><div><strong>03</strong><span>assets/life/austin/03.jpg</span></div></div></figure>
+      </div>
+      <div class="album-note reveal"><span class="date">2026.01–02</span><h3><span class="i18n-zh">专辑文字占位</span><span class="i18n-en">Album note placeholder</span></h3><p><span class="i18n-zh">以后可以在这里记录 UT Austin 项目之外的生活：第一次到访的地方、自然风景、朋友、城市印象，以及学习之外的片段。</span><span class="i18n-en">Use this space for life beyond the UT Austin project: new places, landscapes, friends, impressions of the city, and moments outside the classroom.</span></p></div>
+    </section>
   </main>
-  <footer class="site-footer"><div class="page-width footer-row"><span>© Frank Li</span><span>Daily Life</span></div></footer>
+  <footer class="site-footer"><div class="page-width footer-row"><span>© Frank Li</span><span>Daily Life · Photo Albums</span></div></footer>
   <script src="./script.js"></script>
 </body>
 </html>
