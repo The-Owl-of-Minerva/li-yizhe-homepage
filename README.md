@@ -116,3 +116,20 @@ git push
 ```
 
 If Vercel is already connected to the GitHub repository, it will redeploy automatically.
+
+
+## V4 updates
+
+- Larger, full-width homepage portal cards.
+- Homepage contact area now exposes both email addresses as mailto links and keeps the direct GitHub link.
+- Cambridge and Austin albums now open as independent photo + text mini-blog pages.
+- CV overseas-program buttons link directly to those album-blog pages.
+- English is the default language for first-time visitors; the user's chosen language is remembered in localStorage.
+- Homepage portrait path is standardized as `assets/images/profile.jpg`.
+
+### Overseas album files
+
+- `cambridge-album.html` reads placeholders from `assets/life/cambridge/01.jpg`, `02.jpg`, `03.jpg`.
+- `austin-album.html` reads placeholders from `assets/life/austin/01.jpg`, `02.jpg`, `03.jpg`.
+
+Add real photographs using those file names, then replace placeholder copy directly in each album HTML page.

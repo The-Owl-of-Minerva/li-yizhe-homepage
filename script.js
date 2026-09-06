@@ -2,7 +2,7 @@
   const root = document.documentElement;
   const langButtons = document.querySelectorAll('[data-lang]');
   const saved = localStorage.getItem('site-lang');
-  const initial = saved === 'en' ? 'en' : 'zh';
+  const initial = saved === 'zh' ? 'zh' : 'en';
 
   function setLang(lang) {
     root.dataset.lang = lang;
