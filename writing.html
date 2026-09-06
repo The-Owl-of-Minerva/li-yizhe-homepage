@@ -3,48 +3,82 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Frank Li — essays and personal writing." />
+  <meta name="description" content="Frank Li — essays and notes." />
+  <meta name="theme-color" content="#f4f1ea" />
   <title>Frank Li | Writing</title>
   <link rel="stylesheet" href="./styles.css" />
 </head>
 <body>
-  <div class="ink-bg" aria-hidden="true"><span class="ink-cloud one"></span><span class="ink-cloud two"></span><span class="ink-cloud three"></span><span class="ink-mountain left"></span><span class="ink-mountain right"></span></div>
+
+  <div class="ink-bg" aria-hidden="true">
+    <span class="ink-cloud one"></span>
+    <span class="ink-cloud two"></span>
+    <span class="ink-cloud three"></span>
+    <span class="ink-mountain left"></span>
+    <span class="ink-mountain right"></span>
+  </div>
+
+
   <header class="site-header">
     <div class="nav-wrap">
-      <a class="brand" href="./index.html"><span class="brand-seal">L</span><span class="brand-name">Frank Li</span></a>
-      <nav class="main-nav">
-        <a href="./index.html"><span class="i18n-zh">首页</span><span class="i18n-en">Home</span></a>
-        <a href="./cv.html"><span class="i18n-zh">个人简历</span><span class="i18n-en">CV</span></a>
-        <a href="./publications.html"><span class="i18n-zh">学术成果</span><span class="i18n-en">Academic Work</span></a>
-        <a href="./writing.html" aria-current="page"><span class="i18n-zh">自由写作</span><span class="i18n-en">Writing</span></a>
-        <a href="./life.html"><span class="i18n-zh">日常生活</span><span class="i18n-en">Life</span></a>
-        <div class="mobile-languages"><button class="lang-btn" data-lang="zh">中文</button><button class="lang-btn" data-lang="en">EN</button></div>
+      <a class="brand" href="./index.html" aria-label="Frank Li homepage">
+        <span class="brand-seal">L</span><span class="brand-name">Frank Li</span>
+      </a>
+
+      <nav class="main-nav" aria-label="Primary navigation">
+        <a href="./index.html"><span class="i18n-zh">首页</span><span class="i18n-en">Home</span></a><a href="./cv.html"><span class="i18n-zh">个人简历</span><span class="i18n-en">CV</span></a><a href="./publications.html"><span class="i18n-zh">学术成果</span><span class="i18n-en">Academic Work</span></a><a href="./writing.html" aria-current="page"><span class="i18n-zh">自由写作</span><span class="i18n-en">Writing</span></a><a href="./life.html"><span class="i18n-zh">日常生活</span><span class="i18n-en">Life</span></a>
+        <div class="mobile-languages">
+          <button class="lang-btn" data-lang="zh">中文</button>
+          <button class="lang-btn" data-lang="en">EN</button>
+        </div>
       </nav>
-      <div class="nav-actions"><button class="lang-btn" data-lang="zh">中文</button><span>/</span><button class="lang-btn" data-lang="en">EN</button></div>
-      <button class="menu-btn" type="button" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+
+      <div class="nav-actions">
+        <button class="lang-btn" data-lang="zh">中文</button>
+        <span>/</span>
+        <button class="lang-btn" data-lang="en">EN</button>
+      </div>
+
+      <button class="menu-btn" type="button" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
     </div>
   </header>
+
 
   <main>
     <section class="page-hero">
       <div class="page-width page-hero-grid">
-        <div class="reveal">
-          <p class="eyebrow">FREE WRITING · MARKDOWN BLOG</p>
+        <div>
+          <p class="kicker">WRITING</p>
           <h1><span class="i18n-zh">自由写作</span><span class="i18n-en">Writing</span></h1>
-          <p><span class="i18n-zh">这里采用 Markdown 驱动的博客结构。每篇文章只需要新增一个 Markdown 文件并在文章索引中登记，无需再手工复制整套 HTML 页面。</span><span class="i18n-en">This section now uses a Markdown-driven blog structure. Each new essay only needs a Markdown file plus one metadata entry, without duplicating a full HTML page.</span></p>
+          <p>
+            <span class="i18n-zh">Markdown 驱动的个人博客：研究之外的思考、随笔与长文。</span>
+            <span class="i18n-en">A Markdown-driven blog for essays, notes, and longer-form writing beyond research.</span>
+          </p>
         </div>
-        <div class="page-note reveal"><span class="i18n-zh">文章列表由 posts/posts.json 管理；正文由 post.html 动态读取并渲染 Markdown。适合以后持续写读书、研究感想、城市、技术与随笔。</span><span class="i18n-en">The article index is managed by posts/posts.json, while post.html loads and renders Markdown dynamically. It is designed for books, research reflections, cities, technology, and essays.</span></div>
+        <div class="page-note">
+          <span class="i18n-zh">新增文章时，只需在 posts/ 放 Markdown 文件并在 posts/posts.json 登记。</span>
+          <span class="i18n-en">To add a post, place Markdown files in posts/ and register the post in posts/posts.json.</span>
+        </div>
       </div>
     </section>
 
-    <section class="section page-width">
-      <div class="section-heading reveal"><span class="section-index">01</span><div><p class="kicker">ESSAYS & NOTES</p><h2><span class="i18n-zh">文章与随笔</span><span class="i18n-en">Essays & Notes</span></h2></div></div>
-      <div id="blog-list" class="post-list" aria-live="polite">
-        <article class="post-card reveal visible"><div><h3><span class="i18n-zh">正在读取文章索引…</span><span class="i18n-en">Loading article index…</span></h3></div></article>
+    <section class="section">
+      <div class="page-width">
+        <div id="post-list" class="post-list" aria-live="polite"></div>
       </div>
     </section>
   </main>
-  <footer class="site-footer"><div class="page-width footer-row"><span>© Frank Li</span><span>Markdown Blog</span></div></footer>
+
+
+  <footer class="site-footer">
+    <div class="page-width footer-row">
+      <span>© Frank Li</span>
+      <span>Statistics · AI · Optimization</span>
+    </div>
+  </footer>
+
   <script src="./script.js"></script>
   <script src="./blog.js"></script>
 </body>

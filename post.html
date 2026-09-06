@@ -3,40 +3,74 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Frank Li — blog post." />
-  <title>Frank Li | Writing</title>
+  <meta name="description" content="Frank Li — writing post." />
+  <meta name="theme-color" content="#f4f1ea" />
+  <title>Frank Li | Post</title>
   <link rel="stylesheet" href="./styles.css" />
 </head>
 <body>
-  <div class="ink-bg" aria-hidden="true"><span class="ink-cloud one"></span><span class="ink-cloud two"></span><span class="ink-cloud three"></span><span class="ink-mountain left"></span><span class="ink-mountain right"></span></div>
+
+  <div class="ink-bg" aria-hidden="true">
+    <span class="ink-cloud one"></span>
+    <span class="ink-cloud two"></span>
+    <span class="ink-cloud three"></span>
+    <span class="ink-mountain left"></span>
+    <span class="ink-mountain right"></span>
+  </div>
+
+
   <header class="site-header">
     <div class="nav-wrap">
-      <a class="brand" href="./index.html"><span class="brand-seal">L</span><span class="brand-name">Frank Li</span></a>
-      <nav class="main-nav">
-        <a href="./index.html"><span class="i18n-zh">首页</span><span class="i18n-en">Home</span></a>
-        <a href="./cv.html"><span class="i18n-zh">个人简历</span><span class="i18n-en">CV</span></a>
-        <a href="./publications.html"><span class="i18n-zh">学术成果</span><span class="i18n-en">Academic Work</span></a>
-        <a href="./writing.html" aria-current="page"><span class="i18n-zh">自由写作</span><span class="i18n-en">Writing</span></a>
-        <a href="./life.html"><span class="i18n-zh">日常生活</span><span class="i18n-en">Life</span></a>
-        <div class="mobile-languages"><button class="lang-btn" data-lang="zh">中文</button><button class="lang-btn" data-lang="en">EN</button></div>
+      <a class="brand" href="./index.html" aria-label="Frank Li homepage">
+        <span class="brand-seal">L</span><span class="brand-name">Frank Li</span>
+      </a>
+
+      <nav class="main-nav" aria-label="Primary navigation">
+        <a href="./index.html"><span class="i18n-zh">首页</span><span class="i18n-en">Home</span></a><a href="./cv.html"><span class="i18n-zh">个人简历</span><span class="i18n-en">CV</span></a><a href="./publications.html"><span class="i18n-zh">学术成果</span><span class="i18n-en">Academic Work</span></a><a href="./writing.html" aria-current="page"><span class="i18n-zh">自由写作</span><span class="i18n-en">Writing</span></a><a href="./life.html"><span class="i18n-zh">日常生活</span><span class="i18n-en">Life</span></a>
+        <div class="mobile-languages">
+          <button class="lang-btn" data-lang="zh">中文</button>
+          <button class="lang-btn" data-lang="en">EN</button>
+        </div>
       </nav>
-      <div class="nav-actions"><button class="lang-btn" data-lang="zh">中文</button><span>/</span><button class="lang-btn" data-lang="en">EN</button></div>
-      <button class="menu-btn" type="button" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+
+      <div class="nav-actions">
+        <button class="lang-btn" data-lang="zh">中文</button>
+        <span>/</span>
+        <button class="lang-btn" data-lang="en">EN</button>
+      </div>
+
+      <button class="menu-btn" type="button" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
     </div>
   </header>
+
+
   <main>
-    <article class="article-shell page-width">
-      <a class="article-back" href="./writing.html"><span class="i18n-zh">← 返回自由写作</span><span class="i18n-en">← Back to Writing</span></a>
-      <header class="article-header">
-        <p class="eyebrow">FRANK LI · WRITING</p>
-        <h1 id="article-title"><span class="i18n-zh">正在读取文章…</span><span class="i18n-en">Loading article…</span></h1>
-        <div class="article-meta"><span id="article-date"></span><span id="article-status"></span></div>
-      </header>
-      <div id="article-body" class="markdown-body"></div>
-    </article>
+    <section class="page-hero compact-hero">
+      <div class="page-width">
+        <a class="travel-back" href="./writing.html">← <span class="i18n-zh">返回自由写作</span><span class="i18n-en">Back to Writing</span></a>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="page-width">
+        <article class="markdown-shell">
+          <div id="post-meta" class="markdown-meta"></div>
+          <div id="post-content" class="markdown-body"></div>
+        </article>
+      </div>
+    </section>
   </main>
-  <footer class="site-footer"><div class="page-width footer-row"><span>© Frank Li</span><a href="./writing.html">Writing</a></div></footer>
-  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+
+  <footer class="site-footer">
+    <div class="page-width footer-row">
+      <span>© Frank Li</span>
+      <span>Statistics · AI · Optimization</span>
+    </div>
+  </footer>
+
   <script src="./script.js"></script>
   <script src="./post.js"></script>
 </body>

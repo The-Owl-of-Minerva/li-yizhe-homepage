@@ -2,18 +2,18 @@
   {
     "slug": "first-note",
     "date": "2026.09.06",
-    "draft": true,
+    "status": "draft",
     "title": {
-      "zh": "第一篇文章：博客框架示例",
-      "en": "First Note: Blog Framework Example"
+      "zh": "第一篇随笔：从这里开始",
+      "en": "First Note: Starting Here"
     },
     "summary": {
-      "zh": "这是一个可直接替换的示例条目，用来演示 Markdown 文章如何进入自由写作页面。",
-      "en": "A replaceable sample entry demonstrating how Markdown posts appear in the Writing section."
+      "zh": "一个 Markdown 博客结构的示例条目。以后可以直接复制这个模板。",
+      "en": "A sample entry for the Markdown-driven blog structure."
     },
     "files": {
-      "zh": "posts/first-note.zh.md",
-      "en": "posts/first-note.en.md"
+      "zh": "first-note.zh.md",
+      "en": "first-note.en.md"
     }
   }
 ]

@@ -3,89 +3,120 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Frank Li — Cambridge Summer Program photo notes." />
+  <meta name="description" content="Frank Li — Cambridge summer program photo journal." />
+  <meta name="theme-color" content="#f4f1ea" />
   <title>Frank Li | Cambridge Summer Program</title>
   <link rel="stylesheet" href="./styles.css" />
 </head>
 <body>
-  <div class="ink-bg" aria-hidden="true"><span class="ink-cloud one"></span><span class="ink-cloud two"></span><span class="ink-cloud three"></span><span class="ink-mountain left"></span><span class="ink-mountain right"></span></div>
+
+  <div class="ink-bg" aria-hidden="true">
+    <span class="ink-cloud one"></span>
+    <span class="ink-cloud two"></span>
+    <span class="ink-cloud three"></span>
+    <span class="ink-mountain left"></span>
+    <span class="ink-mountain right"></span>
+  </div>
+
+
   <header class="site-header">
     <div class="nav-wrap">
-      <a class="brand" href="./index.html"><span class="brand-seal">L</span><span class="brand-name">Frank Li</span></a>
-      <nav class="main-nav">
-        <a href="./index.html"><span class="i18n-zh">首页</span><span class="i18n-en">Home</span></a>
-        <a href="./cv.html"><span class="i18n-zh">个人简历</span><span class="i18n-en">CV</span></a>
-        <a href="./publications.html"><span class="i18n-zh">学术成果</span><span class="i18n-en">Academic Work</span></a>
-        <a href="./writing.html"><span class="i18n-zh">自由写作</span><span class="i18n-en">Writing</span></a>
-        <a href="./life.html" aria-current="page"><span class="i18n-zh">日常生活</span><span class="i18n-en">Life</span></a>
-        <div class="mobile-languages"><button class="lang-btn" data-lang="zh">中文</button><button class="lang-btn" data-lang="en">EN</button></div>
+      <a class="brand" href="./index.html" aria-label="Frank Li homepage">
+        <span class="brand-seal">L</span><span class="brand-name">Frank Li</span>
+      </a>
+
+      <nav class="main-nav" aria-label="Primary navigation">
+        <a href="./index.html"><span class="i18n-zh">首页</span><span class="i18n-en">Home</span></a><a href="./cv.html"><span class="i18n-zh">个人简历</span><span class="i18n-en">CV</span></a><a href="./publications.html"><span class="i18n-zh">学术成果</span><span class="i18n-en">Academic Work</span></a><a href="./writing.html"><span class="i18n-zh">自由写作</span><span class="i18n-en">Writing</span></a><a href="./life.html" aria-current="page"><span class="i18n-zh">日常生活</span><span class="i18n-en">Life</span></a>
+        <div class="mobile-languages">
+          <button class="lang-btn" data-lang="zh">中文</button>
+          <button class="lang-btn" data-lang="en">EN</button>
+        </div>
       </nav>
-      <div class="nav-actions"><button class="lang-btn" data-lang="zh">中文</button><span>/</span><button class="lang-btn" data-lang="en">EN</button></div>
-      <button class="menu-btn" type="button" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+
+      <div class="nav-actions">
+        <button class="lang-btn" data-lang="zh">中文</button>
+        <span>/</span>
+        <button class="lang-btn" data-lang="en">EN</button>
+      </div>
+
+      <button class="menu-btn" type="button" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
     </div>
   </header>
+
+
   <main>
-    <section class="travel-hero">
-      <div class="page-width travel-hero-grid">
-        <div class="reveal">
-          <a class="article-back" href="./life.html">← <span class="i18n-zh">返回日常生活</span><span class="i18n-en">Back to Life</span></a>
-          <p class="eyebrow">PHOTO NOTES · 2025.08</p>
+    <section class="page-hero">
+      <div class="page-width page-hero-grid">
+        <div>
+          <p class="kicker">CAMBRIDGE · 2025</p>
           <h1><span class="i18n-zh">剑桥暑校生活</span><span class="i18n-en">Cambridge Summer Program</span></h1>
-          <p><span class="i18n-zh">一个用于记录剑桥暑期交流期间课程、学院、城市与日常片段的图文小博客。</span><span class="i18n-en">A photo-and-text journal for classes, colleges, the city, and everyday moments during the Cambridge summer program.</span></p>
+          <p>
+            <span class="i18n-zh">将每一次出行、城市漫步或生活片段做成一篇独立的 photo journal。</span>
+            <span class="i18n-en">Each trip, walk, or everyday moment becomes an individual photo-journal entry.</span>
+          </p>
         </div>
-        <div class="travel-meta reveal"><span>2025.08</span><span>Cambridge, United Kingdom</span><span>Photo + Text Journal</span></div>
+        <div class="page-note">
+          <a class="text-link" href="./life.html">← <span class="i18n-zh">返回日常生活</span><span class="i18n-en">Back to Life</span></a>
+        </div>
       </div>
     </section>
 
-    <section class="section page-width travel-blog">
-        <article class="travel-entry reveal">
-          <figure class="travel-photo">
-            <img src="./assets/life/cambridge/01.jpg" alt="Cambridge Summer Program photo 1" data-fallback="cam-1">
-            <div class="photo-fallback" id="cam-1"><div><strong>01</strong><span>assets/life/cambridge/01.jpg</span></div></div>
-          </figure>
-          <div class="travel-copy">
-            <span class="travel-index">01</span>
-            <h2><span class="i18n-zh">抵达剑桥</span><span class="i18n-en">Arriving in Cambridge</span></h2>
-            <p><span class="i18n-zh">可以从抵达、第一印象或第一张照片开始，写下对学院、街道和城市氛围的感受。</span><span class="i18n-en">Start with arrival, first impressions, or the first photograph—notes on colleges, streets, and the atmosphere of the city.</span></p>
-            <p class="travel-placeholder"><span class="i18n-zh">这里可以继续补充更长的文字、日期、地点、人物或照片背后的故事。</span><span class="i18n-en">This block can later hold a longer note, date, location, people, or the story behind the photograph.</span></p>
-          </div>
-        </article>
-        <article class="travel-entry reveal reverse">
-          <figure class="travel-photo">
-            <img src="./assets/life/cambridge/02.jpg" alt="Cambridge Summer Program photo 2" data-fallback="cam-2">
-            <div class="photo-fallback" id="cam-2"><div><strong>02</strong><span>assets/life/cambridge/02.jpg</span></div></div>
-          </figure>
-          <div class="travel-copy">
-            <span class="travel-index">02</span>
-            <h2><span class="i18n-zh">课程与学院</span><span class="i18n-en">Classes & Colleges</span></h2>
-            <p><span class="i18n-zh">这里适合放课堂、学院、图书馆或团队项目相关照片，并写一段当时的学习体验。</span><span class="i18n-en">A place for classroom, college, library, or team-project photographs and a short reflection on the learning experience.</span></p>
-            <p class="travel-placeholder"><span class="i18n-zh">这里可以继续补充更长的文字、日期、地点、人物或照片背后的故事。</span><span class="i18n-en">This block can later hold a longer note, date, location, people, or the story behind the photograph.</span></p>
-          </div>
-        </article>
-        <article class="travel-entry reveal">
-          <figure class="travel-photo">
-            <img src="./assets/life/cambridge/03.jpg" alt="Cambridge Summer Program photo 3" data-fallback="cam-3">
-            <div class="photo-fallback" id="cam-3"><div><strong>03</strong><span>assets/life/cambridge/03.jpg</span></div></div>
-          </figure>
-          <div class="travel-copy">
-            <span class="travel-index">03</span>
-            <h2><span class="i18n-zh">城市散步</span><span class="i18n-en">Walking the City</span></h2>
-            <p><span class="i18n-zh">记录课余时间的城市散步、朋友、咖啡馆、博物馆或某个值得记住的下午。</span><span class="i18n-en">Record city walks, friends, cafés, museums, or an afternoon worth remembering outside the classroom.</span></p>
-            <p class="travel-placeholder"><span class="i18n-zh">这里可以继续补充更长的文字、日期、地点、人物或照片背后的故事。</span><span class="i18n-en">This block can later hold a longer note, date, location, people, or the story behind the photograph.</span></p>
-          </div>
-        </article>
-    </section>
+    <section class="section">
+      <div class="page-width">
+        <article class="album-post-card reveal">
+          <a class="album-post-cover" href="./cambridge-seven-sisters.html" aria-label="Birling Gap and Seven Sisters Cliffs">
+            <img src="./assets/life/cambridge/seven-sisters/01.jpg" alt="Birling Gap and Seven Sisters Cliffs" loading="lazy" />
+          </a>
 
-    <section class="section section-soft">
-      <div class="page-width travel-ending reveal">
-        <p class="kicker">END OF ALBUM</p>
-        <h2><span class="i18n-zh">这个专辑可以持续更新</span><span class="i18n-en">This album can keep growing</span></h2>
-        <p><span class="i18n-zh">以后只要继续向对应 assets/life/cambridge 文件夹添加照片，并复制一个 travel-entry 模块，就可以增加新的图文记录。</span><span class="i18n-en">To extend this album later, add more images to assets/life/cambridge and duplicate one travel-entry block for each new photo note.</span></p>
-        <a class="soft-button" href="./life.html"><span class="i18n-zh">返回专辑索引 →</span><span class="i18n-en">Back to album index →</span></a>
+          <div class="album-post-body">
+            <div class="album-post-meta"><span>01</span><span>18 AUG 2025</span></div>
+
+            <h2>
+              <a href="./cambridge-seven-sisters.html">Birling Gap & Seven Sisters Cliffs & Brighton ~ ☀️</a>
+            </h2>
+
+            <p>
+              <span class="i18n-zh">欣赏被《国家地理》杂志称为“世界尽头”的英国白崖，领略南英夏季的壮美风光。</span>
+              <span class="i18n-en">A day along England’s southern coast, from the white cliffs of Birling Gap and Seven Sisters to Brighton.</span>
+            </p>
+
+            <div class="album-post-location">
+              <span class="i18n-zh">英国 · Eastbourne · Seven Sisters Cliffs · Brighton</span>
+              <span class="i18n-en">Eastbourne · Seven Sisters Cliffs · Brighton, United Kingdom</span>
+            </div>
+
+            <a class="album-read-link" href="./cambridge-seven-sisters.html">
+              <span class="i18n-zh">阅读记录 →</span><span class="i18n-en">Read entry →</span>
+            </a>
+          </div>
+        </article>
+
+        <article class="album-post-card album-post-placeholder reveal">
+          <div class="album-post-placeholder-cover">02</div>
+          <div class="album-post-body">
+            <div class="album-post-meta"><span>02</span><span>COMING NEXT</span></div>
+            <h2><span class="i18n-zh">下一篇剑桥记录</span><span class="i18n-en">Next Cambridge entry</span></h2>
+            <p>
+              <span class="i18n-zh">复制第一篇的页面结构即可继续添加学院、课堂、博物馆、伦敦周末等主题。</span>
+              <span class="i18n-en">Duplicate the first entry structure to add colleges, classes, museums, London weekends, and more.</span>
+            </p>
+          </div>
+        </article>
       </div>
     </section>
   </main>
-  <footer class="site-footer"><div class="page-width footer-row"><span>© Frank Li</span><span>Cambridge Summer Program</span></div></footer>
+
+
+  <footer class="site-footer">
+    <div class="page-width footer-row">
+      <span>© Frank Li</span>
+      <span>Statistics · AI · Optimization</span>
+    </div>
+  </footer>
+
   <script src="./script.js"></script>
+
 </body>
 </html>

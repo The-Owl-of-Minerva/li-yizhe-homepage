@@ -1,6 +1,8 @@
 (() => {
   const root = document.documentElement;
   const langButtons = document.querySelectorAll('[data-lang]');
+
+  // First visit defaults to English; explicit user choice is remembered.
   const saved = localStorage.getItem('site-lang');
   const initial = saved === 'zh' ? 'zh' : 'en';
 
@@ -8,37 +10,57 @@
     root.dataset.lang = lang;
     root.lang = lang === 'zh' ? 'zh-CN' : 'en';
     localStorage.setItem('site-lang', lang);
-    langButtons.forEach(btn => btn.classList.toggle('active', btn.dataset.lang === lang));
+
+    langButtons.forEach((btn) => {
+      btn.classList.toggle('active', btn.dataset.lang === lang);
+    });
+
+    window.dispatchEvent(new CustomEvent('site:language-change', { detail: { lang } }));
   }
+
   setLang(initial);
-  langButtons.forEach(btn => btn.addEventListener('click', () => setLang(btn.dataset.lang)));
+
+  langButtons.forEach((btn) => {
+    btn.addEventListener('click', () => setLang(btn.dataset.lang));
+  });
 
   const menu = document.querySelector('.main-nav');
   const menuBtn = document.querySelector('.menu-btn');
+
   if (menu && menuBtn) {
     menuBtn.addEventListener('click', () => {
       const open = menu.classList.toggle('open');
       menuBtn.setAttribute('aria-expanded', String(open));
     });
-    menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
-      menu.classList.remove('open');
-      menuBtn.setAttribute('aria-expanded', 'false');
-    }));
+
+    menu.querySelectorAll('a').forEach((a) => {
+      a.addEventListener('click', () => {
+        menu.classList.remove('open');
+        menuBtn.setAttribute('aria-expanded', 'false');
+      });
+    });
   }
 
   const reveals = document.querySelectorAll('.reveal');
-  const io = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-        io.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.08 });
-  reveals.forEach(el => io.observe(el));
 
-  document.querySelectorAll('img[data-fallback]').forEach(img => {
+  if ('IntersectionObserver' in window) {
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.08 });
+
+    reveals.forEach((el) => io.observe(el));
+  } else {
+    reveals.forEach((el) => el.classList.add('visible'));
+  }
+
+  document.querySelectorAll('img[data-fallback]').forEach((img) => {
     const fallback = document.getElementById(img.dataset.fallback);
+
     const sync = () => {
       if (!img.complete || img.naturalWidth === 0) {
         img.style.display = 'none';
@@ -48,6 +70,7 @@
         if (fallback) fallback.style.display = 'none';
       }
     };
+
     img.addEventListener('load', sync);
     img.addEventListener('error', sync);
     sync();

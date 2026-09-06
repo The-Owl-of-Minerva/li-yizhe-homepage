@@ -1,37 +1,55 @@
 (() => {
-  const list = document.getElementById('blog-list');
+  const list = document.getElementById('post-list');
   if (!list) return;
+
   let posts = [];
 
-  const esc = (value='') => String(value).replace(/[&<>'"]/g, ch => ({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[ch]));
-  const lang = () => document.documentElement.dataset.lang === 'en' ? 'en' : 'zh';
+  const getLang = () => document.documentElement.dataset.lang === 'zh' ? 'zh' : 'en';
+
+  const esc = (s = '') =>
+    s.replaceAll('&', '&amp;').replaceAll('<', '&lt;').replaceAll('>', '&gt;').replaceAll('"', '&quot;');
 
   function render() {
-    const l = lang();
+    const lang = getLang();
+
     if (!posts.length) {
-      list.innerHTML = `<article class="post-card"><div><h3>${l === 'zh' ? '暂时还没有公开文章' : 'No public essays yet'}</h3><p>${l === 'zh' ? '你可以从 posts/README.md 的模板开始添加第一篇 Markdown 文章。' : 'Start with the template in posts/README.md to add your first Markdown essay.'}</p></div></article>`;
+      list.innerHTML = `<div class="empty-state">${lang === 'zh' ? '暂无文章。' : 'No posts yet.'}</div>`;
       return;
     }
-    list.innerHTML = posts
-      .slice()
-      .sort((a,b) => String(b.date).localeCompare(String(a.date)))
-      .map(post => {
-        const title = post.title?.[l] || post.title?.zh || post.slug;
-        const summary = post.summary?.[l] || post.summary?.zh || '';
-        const badge = post.draft ? `<span class="draft-badge">${l === 'zh' ? '草稿框架' : 'Draft'}</span>` : '';
-        return `<a class="post-card post-card-link" href="./post.html?slug=${encodeURIComponent(post.slug)}">
-          <div><h3>${esc(title)}</h3><p>${esc(summary)}</p>${badge}</div>
-          <div class="post-meta">${esc(post.date || '')}<span class="post-arrow">↗</span></div>
-        </a>`;
-      }).join('');
+
+    list.innerHTML = posts.map((post) => {
+      const title = post.title?.[lang] || post.title?.en || post.slug;
+      const summary = post.summary?.[lang] || post.summary?.en || '';
+      const status = post.status === 'draft'
+        ? `<span class="draft-badge">${lang === 'zh' ? '草稿' : 'Draft'}</span>`
+        : '';
+
+      return `
+        <a class="post-card" href="./post.html?slug=${encodeURIComponent(post.slug)}">
+          <div>
+            <h3>${esc(title)}</h3>
+            <p>${esc(summary)}</p>
+            ${status}
+          </div>
+          <div class="post-meta">${esc(post.date || '')}</div>
+        </a>
+      `;
+    }).join('');
   }
 
   fetch('./posts/posts.json')
-    .then(r => { if (!r.ok) throw new Error('posts index'); return r.json(); })
-    .then(data => { posts = Array.isArray(data) ? data : []; render(); })
+    .then((r) => {
+      if (!r.ok) throw new Error('Failed to load posts index.');
+      return r.json();
+    })
+    .then((data) => {
+      posts = Array.isArray(data) ? data : [];
+      render();
+    })
     .catch(() => {
-      list.innerHTML = `<article class="post-card"><div><h3><span class="i18n-zh">文章索引读取失败</span><span class="i18n-en">Could not load the article index</span></h3><p><span class="i18n-zh">部署到 Vercel 后会正常使用 fetch；本地预览请使用 Live Server 或本地 HTTP 服务器。</span><span class="i18n-en">The fetch works on Vercel. For local preview, use Live Server or a local HTTP server.</span></p></div></article>`;
+      const lang = getLang();
+      list.innerHTML = `<div class="empty-state">${lang === 'zh' ? '文章索引加载失败。' : 'Could not load the post index.'}</div>`;
     });
 
-  new MutationObserver(render).observe(document.documentElement, { attributes:true, attributeFilter:['data-lang'] });
+  window.addEventListener('site:language-change', render);
 })();

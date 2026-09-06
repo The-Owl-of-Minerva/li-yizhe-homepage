@@ -3,60 +3,106 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Frank Li — daily life, travel, photography, and overseas-program albums." />
-  <title>Frank Li | Daily Life</title>
+  <meta name="description" content="Frank Li — daily life and travel albums." />
+  <meta name="theme-color" content="#f4f1ea" />
+  <title>Frank Li | Life</title>
   <link rel="stylesheet" href="./styles.css" />
 </head>
 <body>
-  <div class="ink-bg" aria-hidden="true"><span class="ink-cloud one"></span><span class="ink-cloud two"></span><span class="ink-cloud three"></span><span class="ink-mountain left"></span><span class="ink-mountain right"></span></div>
+
+  <div class="ink-bg" aria-hidden="true">
+    <span class="ink-cloud one"></span>
+    <span class="ink-cloud two"></span>
+    <span class="ink-cloud three"></span>
+    <span class="ink-mountain left"></span>
+    <span class="ink-mountain right"></span>
+  </div>
+
+
   <header class="site-header">
     <div class="nav-wrap">
-      <a class="brand" href="./index.html"><span class="brand-seal">L</span><span class="brand-name">Frank Li</span></a>
-      <nav class="main-nav">
-        <a href="./index.html"><span class="i18n-zh">首页</span><span class="i18n-en">Home</span></a>
-        <a href="./cv.html"><span class="i18n-zh">个人简历</span><span class="i18n-en">CV</span></a>
-        <a href="./publications.html"><span class="i18n-zh">学术成果</span><span class="i18n-en">Academic Work</span></a>
-        <a href="./writing.html"><span class="i18n-zh">自由写作</span><span class="i18n-en">Writing</span></a>
-        <a href="./life.html" aria-current="page"><span class="i18n-zh">日常生活</span><span class="i18n-en">Life</span></a>
-        <div class="mobile-languages"><button class="lang-btn" data-lang="zh">中文</button><button class="lang-btn" data-lang="en">EN</button></div>
+      <a class="brand" href="./index.html" aria-label="Frank Li homepage">
+        <span class="brand-seal">L</span><span class="brand-name">Frank Li</span>
+      </a>
+
+      <nav class="main-nav" aria-label="Primary navigation">
+        <a href="./index.html"><span class="i18n-zh">首页</span><span class="i18n-en">Home</span></a><a href="./cv.html"><span class="i18n-zh">个人简历</span><span class="i18n-en">CV</span></a><a href="./publications.html"><span class="i18n-zh">学术成果</span><span class="i18n-en">Academic Work</span></a><a href="./writing.html"><span class="i18n-zh">自由写作</span><span class="i18n-en">Writing</span></a><a href="./life.html" aria-current="page"><span class="i18n-zh">日常生活</span><span class="i18n-en">Life</span></a>
+        <div class="mobile-languages">
+          <button class="lang-btn" data-lang="zh">中文</button>
+          <button class="lang-btn" data-lang="en">EN</button>
+        </div>
       </nav>
-      <div class="nav-actions"><button class="lang-btn" data-lang="zh">中文</button><span>/</span><button class="lang-btn" data-lang="en">EN</button></div>
-      <button class="menu-btn" type="button" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+
+      <div class="nav-actions">
+        <button class="lang-btn" data-lang="zh">中文</button>
+        <span>/</span>
+        <button class="lang-btn" data-lang="en">EN</button>
+      </div>
+
+      <button class="menu-btn" type="button" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
     </div>
   </header>
+
 
   <main>
     <section class="page-hero">
       <div class="page-width page-hero-grid">
-        <div class="reveal">
-          <p class="eyebrow">DAILY LIFE · PHOTO NOTES</p>
+        <div>
+          <p class="kicker">LIFE</p>
           <h1><span class="i18n-zh">日常生活</span><span class="i18n-en">Daily Life</span></h1>
-          <p><span class="i18n-zh">这里记录旅行、城市、园林、博物馆和海外交流中的照片与文字。每个专辑都可以继续进入独立的“照片 + 文字”小博客。</span><span class="i18n-en">A place for photographs and notes from travel, cities, gardens, museums, and overseas programs. Each album opens into its own photo-and-text mini blog.</span></p>
+          <p>
+            <span class="i18n-zh">照片、旅行、城市与日常记录。海外交流专辑会进一步进入独立的图文小博客。</span>
+            <span class="i18n-en">Photos, travel, places, and everyday moments. Overseas-program albums lead to individual photo-journal entries.</span>
+          </p>
         </div>
-        <div class="page-note reveal"><span class="i18n-zh">剑桥和奥斯汀专辑已拆分成独立页面。以后可以继续新增苏州、博物馆、旅行或其他主题专辑。</span><span class="i18n-en">Cambridge and Austin now have dedicated pages. More albums—Suzhou, museums, travel, or other themes—can be added later.</span></div>
+        <div class="page-note">
+          <span class="i18n-zh">这里先以“海外交流专辑”为主，后续可继续添加苏州、博物馆、园林、旅行等主题。</span>
+          <span class="i18n-en">The current focus is overseas-program albums; more themes can be added later.</span>
+        </div>
       </div>
     </section>
 
-    <section class="section page-width">
-      <div class="section-heading reveal"><span class="section-index">01</span><div><p class="kicker">ALBUM INDEX</p><h2><span class="i18n-zh">海外交流专辑</span><span class="i18n-en">Overseas Albums</span></h2></div></div>
-      <div class="album-index album-index-large">
-        <a class="album-index-card reveal" href="./cambridge-album.html"><span class="album-no">01</span><div><h3><span class="i18n-zh">剑桥暑校生活</span><span class="i18n-en">Cambridge Summer</span></h3><p>Cambridge · 2025.08</p><span class="album-desc i18n-zh">课程、学院、城市散步、朋友与日常记录</span><span class="album-desc i18n-en">Classes, colleges, city walks, friends, and everyday notes</span></div><span class="arrow">↗</span></a>
-        <a class="album-index-card reveal" href="./austin-album.html"><span class="album-no">02</span><div><h3><span class="i18n-zh">奥斯汀寒校生活</span><span class="i18n-en">Austin Winter</span></h3><p>Austin · 2026.01–02</p><span class="album-desc i18n-zh">学习、城市生活、自然风景与团队活动</span><span class="album-desc i18n-en">Study, city life, landscapes, and team activities</span></div><span class="arrow">↗</span></a>
-      </div>
-    </section>
-
-    <section class="section section-soft">
+    <section class="section">
       <div class="page-width">
-        <div class="section-heading reveal"><span class="section-index">02</span><div><p class="kicker">MORE ALBUMS</p><h2><span class="i18n-zh">更多生活记录</span><span class="i18n-en">More Life Notes</span></h2></div></div>
-        <div class="placeholder-grid">
-          <article class="placeholder-card reveal"><h3><span class="i18n-zh">城市与园林</span><span class="i18n-en">Cities & Gardens</span></h3><p><span class="i18n-zh">预留给苏州园林、城市散步和建筑记录。</span><span class="i18n-en">Reserved for Suzhou gardens, city walks, and architecture notes.</span></p></article>
-          <article class="placeholder-card reveal"><h3><span class="i18n-zh">博物馆与旅行</span><span class="i18n-en">Museums & Travel</span></h3><p><span class="i18n-zh">预留给博物馆、展览、旅行与摄影记录。</span><span class="i18n-en">Reserved for museums, exhibitions, travel, and photography.</span></p></article>
+        <div class="section-heading">
+          <span class="section-index">01</span>
+          <div><p class="kicker">ALBUM INDEX</p><h2><span class="i18n-zh">海外交流专辑</span><span class="i18n-en">Overseas Program Albums</span></h2></div>
+        </div>
+
+        <div class="album-index-grid">
+          <a class="album-index-card" href="./cambridge-album.html">
+            <div class="album-index-no">01</div>
+            <div>
+              <h3><span class="i18n-zh">剑桥暑校生活</span><span class="i18n-en">Cambridge Summer Program</span></h3>
+              <p>Cambridge · 2025.08</p>
+            </div>
+            <span class="album-index-arrow">→</span>
+          </a>
+
+          <a class="album-index-card" href="./austin-album.html">
+            <div class="album-index-no">02</div>
+            <div>
+              <h3><span class="i18n-zh">奥斯汀寒校生活</span><span class="i18n-en">Austin Winter Program</span></h3>
+              <p>Austin · 2026.01–02</p>
+            </div>
+            <span class="album-index-arrow">→</span>
+          </a>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer"><div class="page-width footer-row"><span>© Frank Li</span><span>Life · Travel · Photography</span></div></footer>
+
+  <footer class="site-footer">
+    <div class="page-width footer-row">
+      <span>© Frank Li</span>
+      <span>Statistics · AI · Optimization</span>
+    </div>
+  </footer>
+
   <script src="./script.js"></script>
+
 </body>
 </html>

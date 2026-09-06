@@ -9,26 +9,42 @@
   <link rel="stylesheet" href="./styles.css" />
 </head>
 <body>
+
   <div class="ink-bg" aria-hidden="true">
-    <span class="ink-cloud one"></span><span class="ink-cloud two"></span><span class="ink-cloud three"></span>
-    <span class="ink-mountain left"></span><span class="ink-mountain right"></span>
+    <span class="ink-cloud one"></span>
+    <span class="ink-cloud two"></span>
+    <span class="ink-cloud three"></span>
+    <span class="ink-mountain left"></span>
+    <span class="ink-mountain right"></span>
   </div>
+
 
   <header class="site-header">
     <div class="nav-wrap">
-      <a class="brand" href="./index.html" aria-label="Frank Li homepage"><span class="brand-seal">L</span><span class="brand-name">Frank Li</span></a>
+      <a class="brand" href="./index.html" aria-label="Frank Li homepage">
+        <span class="brand-seal">L</span><span class="brand-name">Frank Li</span>
+      </a>
+
       <nav class="main-nav" aria-label="Primary navigation">
-        <a href="./index.html" aria-current="page"><span class="i18n-zh">首页</span><span class="i18n-en">Home</span></a>
-        <a href="./cv.html"><span class="i18n-zh">个人简历</span><span class="i18n-en">CV</span></a>
-        <a href="./publications.html"><span class="i18n-zh">学术成果</span><span class="i18n-en">Academic Work</span></a>
-        <a href="./writing.html"><span class="i18n-zh">自由写作</span><span class="i18n-en">Writing</span></a>
-        <a href="./life.html"><span class="i18n-zh">日常生活</span><span class="i18n-en">Life</span></a>
-        <div class="mobile-languages"><button class="lang-btn" data-lang="zh">中文</button><button class="lang-btn" data-lang="en">EN</button></div>
+        <a href="./index.html" aria-current="page"><span class="i18n-zh">首页</span><span class="i18n-en">Home</span></a><a href="./cv.html"><span class="i18n-zh">个人简历</span><span class="i18n-en">CV</span></a><a href="./publications.html"><span class="i18n-zh">学术成果</span><span class="i18n-en">Academic Work</span></a><a href="./writing.html"><span class="i18n-zh">自由写作</span><span class="i18n-en">Writing</span></a><a href="./life.html"><span class="i18n-zh">日常生活</span><span class="i18n-en">Life</span></a>
+        <div class="mobile-languages">
+          <button class="lang-btn" data-lang="zh">中文</button>
+          <button class="lang-btn" data-lang="en">EN</button>
+        </div>
       </nav>
-      <div class="nav-actions"><button class="lang-btn" data-lang="zh">中文</button><span>/</span><button class="lang-btn" data-lang="en">EN</button></div>
-      <button class="menu-btn" type="button" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+
+      <div class="nav-actions">
+        <button class="lang-btn" data-lang="zh">中文</button>
+        <span>/</span>
+        <button class="lang-btn" data-lang="en">EN</button>
+      </div>
+
+      <button class="menu-btn" type="button" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
     </div>
   </header>
+
 
   <main>
     <section class="home-hero">
@@ -38,19 +54,41 @@
             <p class="eyebrow">STATISTICS · ARTIFICIAL INTELLIGENCE · OPTIMIZATION</p>
             <h1 class="home-title">Frank Li</h1>
             <p class="home-cn-name">李亦哲</p>
-            <p class="home-role"><span class="i18n-zh">本科生研究者 · Statistics + AI</span><span class="i18n-en">Undergraduate Researcher · Statistics + AI</span></p>
-            <p class="home-intro">
-              <span class="i18n-zh">西南财经大学经济与管理研究院金融学本科生。我的研究兴趣逐渐聚焦于统计建模、机器学习与优化方法，目前参与脉冲神经网络对抗鲁棒性、微观调查数据统计分析与供应链多主体决策等研究。我希望以统计学的理论与方法为基础，进一步探索人工智能模型的可靠性、可解释性与数据驱动决策问题。</span>
-              <span class="i18n-en">I am an undergraduate student in Finance at the Research Institute of Economics and Management, Southwestern University of Finance and Economics. My research interests have increasingly centered on statistical modeling, machine learning, and optimization. I am currently involved in research on adversarial robustness of spiking neural networks, statistical analysis of micro-survey data, and multi-agent decision making in supply chains. I hope to build on statistical theory and methodology to further explore the reliability and interpretability of AI models and data-driven decision making.</span>
+
+            <p class="home-role">
+              <span class="i18n-zh">本科生研究者 · Statistics + AI</span>
+              <span class="i18n-en">Undergraduate Researcher · Statistics + AI</span>
             </p>
+
+            <div class="home-intro">
+              <p class="i18n-zh">
+                西南财经大学经济与管理研究院金融学本科生。我的研究兴趣逐渐聚焦于统计建模、
+                机器学习与优化方法，目前参与脉冲神经网络对抗鲁棒性、微观调查数据统计分析
+                与供应链多主体决策等研究。我希望以统计学的理论与方法为基础，进一步探索
+                人工智能模型的可靠性、可解释性与数据驱动决策问题。
+              </p>
+              <p class="i18n-en">
+                I am an undergraduate student in Finance at the Research Institute of Economics and Management,
+                Southwestern University of Finance and Economics. My research interests increasingly center on
+                statistical modeling, machine learning, and optimization. I am currently involved in research on
+                adversarial robustness of spiking neural networks, statistical analysis of micro-survey data,
+                and multi-agent decision making in supply chains. I hope to build on statistical theory and
+                methodology to further explore the reliability and interpretability of AI models and
+                data-driven decision making.
+              </p>
+            </div>
+
             <div class="quick-meta">
               <span>SWUFE</span><span>Statistics</span><span>Machine Learning</span><span>Optimization</span>
             </div>
-            <div class="contact-row contact-row-home">
+
+            <div class="contact-row">
               <a class="text-link" href="mailto:lyzh0616@163.com">lyzh0616@163.com ↗</a>
               <a class="text-link" href="mailto:lifrank390@gmail.com">lifrank390@gmail.com ↗</a>
               <a class="text-link" href="https://github.com/The-Owl-of-Minerva" target="_blank" rel="noreferrer">GitHub ↗</a>
-              <a class="text-link" href="./cv.html"><span class="i18n-zh">进入个人简历 →</span><span class="i18n-en">View CV →</span></a>
+              <a class="text-link" href="./cv.html">
+                <span class="i18n-zh">进入个人简历 →</span><span class="i18n-en">View CV →</span>
+              </a>
             </div>
           </div>
 
@@ -58,7 +96,11 @@
             <div class="photo-frame">
               <img src="./assets/images/profile.jpg" alt="Frank Li portrait" data-fallback="profile-fallback" />
               <div class="photo-fallback" id="profile-fallback">
-                <div><strong>FL</strong><span class="i18n-zh">将个人照片命名为“profile.jpg”，放入 assets/images 文件夹</span><span class="i18n-en">Place your portrait at assets/images/profile.jpg</span></div>
+                <div>
+                  <strong>FL</strong>
+                  <span class="i18n-zh">将主页照片保存为 assets/images/profile.jpg</span>
+                  <span class="i18n-en">Place your portrait at assets/images/profile.jpg</span>
+                </div>
               </div>
             </div>
           </div>
@@ -67,17 +109,56 @@
         <div class="portal reveal">
           <p class="portal-title"><span class="i18n-zh">浏览</span><span class="i18n-en">Explore</span></p>
           <div class="portal-grid">
-            <a class="portal-card" href="./cv.html"><span class="num">01</span><div><h2><span class="i18n-zh">个人简历</span><span class="i18n-en">Curriculum Vitae</span></h2><p><span class="i18n-zh">科研、竞赛、实习与海外交流经历</span><span class="i18n-en">Research, competitions, internship and overseas programs</span></p></div><span class="arrow">↗</span></a>
-            <a class="portal-card" href="./publications.html"><span class="num">02</span><div><h2><span class="i18n-zh">学术成果</span><span class="i18n-en">Academic Work</span></h2><p><span class="i18n-zh">论文、会议与研究成果链接</span><span class="i18n-en">Publications, conferences and research links</span></p></div><span class="arrow">↗</span></a>
-            <a class="portal-card" href="./writing.html"><span class="num">03</span><div><h2><span class="i18n-zh">自由写作</span><span class="i18n-en">Writing</span></h2><p><span class="i18n-zh">研究之外的思考、随笔与长文</span><span class="i18n-en">Essays, notes and longer-form writing</span></p></div><span class="arrow">↗</span></a>
-            <a class="portal-card" href="./life.html"><span class="num">04</span><div><h2><span class="i18n-zh">日常生活</span><span class="i18n-en">Daily Life</span></h2><p><span class="i18n-zh">照片、旅行、城市与日常记录</span><span class="i18n-en">Photos, travel, places and everyday moments</span></p></div><span class="arrow">↗</span></a>
+            <a class="portal-card" href="./cv.html">
+              <span class="num">01</span>
+              <div>
+                <h2><span class="i18n-zh">个人简历</span><span class="i18n-en">Curriculum Vitae</span></h2>
+                <p><span class="i18n-zh">科研、竞赛、实习与海外交流经历</span><span class="i18n-en">Research, competitions, internship and overseas programs</span></p>
+              </div>
+              <span class="arrow">↗</span>
+            </a>
+
+            <a class="portal-card" href="./publications.html">
+              <span class="num">02</span>
+              <div>
+                <h2><span class="i18n-zh">学术成果</span><span class="i18n-en">Academic Work</span></h2>
+                <p><span class="i18n-zh">论文、会议与研究成果链接</span><span class="i18n-en">Publications, conferences and research links</span></p>
+              </div>
+              <span class="arrow">↗</span>
+            </a>
+
+            <a class="portal-card" href="./writing.html">
+              <span class="num">03</span>
+              <div>
+                <h2><span class="i18n-zh">自由写作</span><span class="i18n-en">Writing</span></h2>
+                <p><span class="i18n-zh">研究之外的思考、随笔与长文</span><span class="i18n-en">Essays, notes and longer-form writing</span></p>
+              </div>
+              <span class="arrow">↗</span>
+            </a>
+
+            <a class="portal-card" href="./life.html">
+              <span class="num">04</span>
+              <div>
+                <h2><span class="i18n-zh">日常生活</span><span class="i18n-en">Daily Life</span></h2>
+                <p><span class="i18n-zh">照片、旅行、城市与日常记录</span><span class="i18n-en">Photos, travel, places and everyday moments</span></p>
+              </div>
+              <span class="arrow">↗</span>
+            </a>
           </div>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer"><div class="page-width footer-row"><span>© Frank Li</span><span>Statistics · AI · Optimization</span></div></footer>
+
+  <footer class="site-footer">
+    <div class="page-width footer-row">
+      <span>© Frank Li</span>
+      <span>Statistics · AI · Optimization</span>
+    </div>
+  </footer>
+
   <script src="./script.js"></script>
+
 </body>
 </html>

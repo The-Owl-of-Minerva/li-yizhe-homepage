@@ -1,135 +1,54 @@
-# Li Yizhe Homepage — V3
+# li-yizhe-homepage v5
 
-Bilingual academic/personal homepage for GitHub + Vercel.
+Static bilingual personal academic homepage.
 
-## V3 upgrades
+## Copy into your existing repository
 
-- Homepage uses `assets/images/个人照片.jpg` as the portrait.
-- Cambridge and Austin entries on `cv.html` now include buttons linking directly to mini albums in `life.html`.
-- `life.html` contains dedicated Cambridge Summer and Austin Winter albums.
-- `writing.html` is now a Markdown-driven blog index.
-- `post.html` is a reusable article reader, so future posts do not need separate handwritten HTML pages.
+Copy every file/folder in this package into your existing:
 
-## Structure
+`D:\编程设计\个人主页`
 
-```text
-li-yizhe-homepage/
-├─ index.html
-├─ cv.html
-├─ publications.html
-├─ writing.html
-├─ post.html
-├─ life.html
-├─ styles.css
-├─ script.js
-├─ blog.js
-├─ post.js
-├─ vercel.json
-├─ assets/
-│  ├─ images/
-│  │  └─ 个人照片.jpg
-│  └─ life/
-│     ├─ cambridge/
-│     │  ├─ 01.jpg
-│     │  ├─ 02.jpg
-│     │  └─ 03.jpg
-│     └─ austin/
-│        ├─ 01.jpg
-│        ├─ 02.jpg
-│        └─ 03.jpg
-└─ posts/
-   ├─ posts.json
-   ├─ first-note.zh.md
-   ├─ first-note.en.md
-   └─ README.md
-```
+Do **not** delete the hidden `.git` folder in your existing project.
 
-## Portrait
+## Required profile photo
 
-The homepage is already configured to use:
+Keep your existing homepage portrait at:
 
-```text
-assets/images/个人照片.jpg
-```
+`assets/images/profile.jpg`
 
-Chinese filenames work on GitHub/Vercel. For long-term maintenance, keep the path exactly the same if you replace the photo.
+## Cambridge Seven Sisters entry
 
-## Cambridge / Austin albums
+Create this folder:
 
-Put photos into:
+`assets/life/cambridge/seven-sisters/`
 
-```text
-assets/life/cambridge/01.jpg
-assets/life/cambridge/02.jpg
-assets/life/cambridge/03.jpg
+Place nine original photos there and name them:
 
-assets/life/austin/01.jpg
-assets/life/austin/02.jpg
-assets/life/austin/03.jpg
-```
+- 01.jpg
+- 02.jpg
+- 03.jpg
+- 04.jpg
+- 05.jpg
+- 06.jpg
+- 07.jpg
+- 08.jpg
+- 09.jpg
 
-The CV buttons link to:
+The code already references these exact filenames.
 
-```text
-life.html#cambridge
-life.html#austin
-```
+## Markdown writing system
 
-## Markdown blog
+- `writing.html` reads `posts/posts.json`
+- `post.html?slug=...` renders Markdown
+- Chinese and English versions can use separate `.md` files
 
-See `posts/README.md` for the full workflow. In short:
-
-1. add `.zh.md` and `.en.md` files under `posts/`;
-2. add metadata to `posts/posts.json`;
-3. push to GitHub;
-4. Vercel redeploys automatically.
-
-The Markdown reader uses `marked.js` from jsDelivr.
-
-## Local preview
-
-The Markdown blog uses `fetch`, so use an HTTP server instead of double-clicking the HTML file.
-
-In the project folder:
-
-```powershell
-python -m http.server 8000
-```
-
-Then open:
-
-```text
-http://localhost:8000
-```
-
-VS Code Live Server also works.
-
-## GitHub / Vercel update
-
-Copy the V3 files into your existing local Git repository, keeping the hidden `.git` folder. Then:
+## Git update
 
 ```powershell
 git status
 git add .
-git commit -m "Add travel albums and Markdown blog"
+git commit -m "Add Cambridge travel journal and update homepage"
 git push
 ```
 
-If Vercel is already connected to the GitHub repository, it will redeploy automatically.
-
-
-## V4 updates
-
-- Larger, full-width homepage portal cards.
-- Homepage contact area now exposes both email addresses as mailto links and keeps the direct GitHub link.
-- Cambridge and Austin albums now open as independent photo + text mini-blog pages.
-- CV overseas-program buttons link directly to those album-blog pages.
-- English is the default language for first-time visitors; the user's chosen language is remembered in localStorage.
-- Homepage portrait path is standardized as `assets/images/profile.jpg`.
-
-### Overseas album files
-
-- `cambridge-album.html` reads placeholders from `assets/life/cambridge/01.jpg`, `02.jpg`, `03.jpg`.
-- `austin-album.html` reads placeholders from `assets/life/austin/01.jpg`, `02.jpg`, `03.jpg`.
-
-Add real photographs using those file names, then replace placeholder copy directly in each album HTML page.
+Vercel will deploy automatically when the GitHub repository is connected.

@@ -3,177 +3,315 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Frank Li — Curriculum Vitae." />
+  <meta name="description" content="Frank Li — curriculum vitae." />
   <meta name="theme-color" content="#f4f1ea" />
   <title>Frank Li | CV</title>
   <link rel="stylesheet" href="./styles.css" />
 </head>
 <body>
-  <div class="ink-bg" aria-hidden="true"><span class="ink-cloud one"></span><span class="ink-cloud two"></span><span class="ink-cloud three"></span><span class="ink-mountain left"></span><span class="ink-mountain right"></span></div>
+
+  <div class="ink-bg" aria-hidden="true">
+    <span class="ink-cloud one"></span>
+    <span class="ink-cloud two"></span>
+    <span class="ink-cloud three"></span>
+    <span class="ink-mountain left"></span>
+    <span class="ink-mountain right"></span>
+  </div>
+
+
   <header class="site-header">
     <div class="nav-wrap">
-      <a class="brand" href="./index.html"><span class="brand-seal">L</span><span class="brand-name">Frank Li</span></a>
+      <a class="brand" href="./index.html" aria-label="Frank Li homepage">
+        <span class="brand-seal">L</span><span class="brand-name">Frank Li</span>
+      </a>
+
       <nav class="main-nav" aria-label="Primary navigation">
-        <a href="./index.html"><span class="i18n-zh">首页</span><span class="i18n-en">Home</span></a>
-        <a href="./cv.html" aria-current="page"><span class="i18n-zh">个人简历</span><span class="i18n-en">CV</span></a>
-        <a href="./publications.html"><span class="i18n-zh">学术成果</span><span class="i18n-en">Academic Work</span></a>
-        <a href="./writing.html"><span class="i18n-zh">自由写作</span><span class="i18n-en">Writing</span></a>
-        <a href="./life.html"><span class="i18n-zh">日常生活</span><span class="i18n-en">Life</span></a>
-        <div class="mobile-languages"><button class="lang-btn" data-lang="zh">中文</button><button class="lang-btn" data-lang="en">EN</button></div>
+        <a href="./index.html"><span class="i18n-zh">首页</span><span class="i18n-en">Home</span></a><a href="./cv.html" aria-current="page"><span class="i18n-zh">个人简历</span><span class="i18n-en">CV</span></a><a href="./publications.html"><span class="i18n-zh">学术成果</span><span class="i18n-en">Academic Work</span></a><a href="./writing.html"><span class="i18n-zh">自由写作</span><span class="i18n-en">Writing</span></a><a href="./life.html"><span class="i18n-zh">日常生活</span><span class="i18n-en">Life</span></a>
+        <div class="mobile-languages">
+          <button class="lang-btn" data-lang="zh">中文</button>
+          <button class="lang-btn" data-lang="en">EN</button>
+        </div>
       </nav>
-      <div class="nav-actions"><button class="lang-btn" data-lang="zh">中文</button><span>/</span><button class="lang-btn" data-lang="en">EN</button></div>
-      <button class="menu-btn" type="button" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+
+      <div class="nav-actions">
+        <button class="lang-btn" data-lang="zh">中文</button>
+        <span>/</span>
+        <button class="lang-btn" data-lang="en">EN</button>
+      </div>
+
+      <button class="menu-btn" type="button" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
     </div>
   </header>
+
 
   <main>
     <section class="page-hero">
       <div class="page-width page-hero-grid">
-        <div class="reveal">
-          <p class="eyebrow">CURRICULUM VITAE</p>
+        <div>
+          <p class="kicker">CURRICULUM VITAE</p>
           <h1><span class="i18n-zh">个人简历</span><span class="i18n-en">Curriculum Vitae</span></h1>
-          <p><span class="i18n-zh">这里集中展示我的教育背景，以及科研、竞赛、实习和海外交流经历。网站版保留完整的经历描述，同时隐去不必要的个人成绩信息。</span><span class="i18n-en">This page presents my education and full descriptions of research, competition, internship, and overseas-program experience, while leaving out nonessential personal score details.</span></p>
+          <p>
+            <span class="i18n-zh">以 Statistics + AI 为主线呈现科研、竞赛、实习与海外交流经历。</span>
+            <span class="i18n-en">Research, competitions, internship, and overseas programs organized around a Statistics + AI trajectory.</span>
+          </p>
         </div>
-        <div class="page-note reveal"><span class="i18n-zh">当前版本按 Stat + AI 申请逻辑组织，并延续此前决定，不展示中国人民大学与中国社会科学院的科研助理经历。</span><span class="i18n-en">This version is organized around a Statistics + AI application narrative and, as previously decided, does not display the RUC or CASS research-assistant experiences.</span></div>
+        <div class="page-note">
+          <strong>Frank Li · 李亦哲</strong><br />
+          <a href="mailto:lyzh0616@163.com">lyzh0616@163.com</a><br />
+          <a href="mailto:lifrank390@gmail.com">lifrank390@gmail.com</a><br />
+          <a href="https://github.com/The-Owl-of-Minerva" target="_blank" rel="noreferrer">github.com/The-Owl-of-Minerva ↗</a>
+        </div>
       </div>
     </section>
 
-    <section class="section page-width">
-      <div class="section-heading reveal"><span class="section-index">00</span><div><p class="kicker">EDUCATION</p><h2><span class="i18n-zh">教育背景</span><span class="i18n-en">Education</span></h2></div></div>
-      <div class="education-grid reveal">
-        <article class="education-card">
-          <h3><span class="i18n-zh">西南财经大学（SWUFE）</span><span class="i18n-en">Southwestern University of Finance and Economics (SWUFE)</span></h3>
-          <p><span class="i18n-zh">经济与管理研究院 · 金融学（经管国际化创新实验班）</span><span class="i18n-en">Research Institute of Economics and Management · Finance (International Innovation Experimental Program in Economics and Management)</span></p>
-          <p>2023.09 — 2027.07</p>
-        </article>
-        <article class="education-card">
-          <h3><span class="i18n-zh">研究取向</span><span class="i18n-en">Research Orientation</span></h3>
-          <p>Statistics · Artificial Intelligence · Optimization</p>
-          <p>Python · Stata · MATLAB · SPSS</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="section section-soft" id="research">
+    <section class="section">
       <div class="page-width">
-        <div class="section-heading reveal"><span class="section-index">01</span><div><p class="kicker">RESEARCH</p><h2><span class="i18n-zh">科研经历</span><span class="i18n-en">Research Experience</span></h2></div></div>
+        <div class="section-heading">
+          <span class="section-index">00</span>
+          <div><p class="kicker">EDUCATION</p><h2><span class="i18n-zh">教育背景</span><span class="i18n-en">Education</span></h2></div>
+        </div>
+
+        <div class="education-grid">
+          <article class="education-card">
+            <h3><span class="i18n-zh">西南财经大学（SWUFE）</span><span class="i18n-en">Southwestern University of Finance and Economics (SWUFE)</span></h3>
+            <p><span class="i18n-zh">经济与管理研究院 · 金融学（经管国际化创新实验班）</span><span class="i18n-en">Research Institute of Economics and Management · Finance (International Innovation Program)</span></p>
+            <p>2023.09 — 2027.07</p>
+            <ul>
+              <li>GPA: 3.7 / 5.0</li>
+              <li>IELTS 7.0 (Speaking 6.5); CET-6 605</li>
+            </ul>
+          </article>
+
+          <article class="education-card">
+            <h3><span class="i18n-zh">定量课程</span><span class="i18n-en">Selected Quantitative Coursework</span></h3>
+            <p>
+              Optimization Theory & Applications (99), Calculus I (91), Matrix Analysis (91),
+              Mathematical Modeling (90), Mathematical Statistics (86), Numerical Analysis (84),
+              Python Programming (81), Advanced Algebra I (80), Real Analysis (80).
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft">
+      <div class="page-width">
+        <div class="section-heading">
+          <span class="section-index">01</span>
+          <div><p class="kicker">RESEARCH</p><h2><span class="i18n-zh">科研经历</span><span class="i18n-en">Research Experience</span></h2></div>
+        </div>
+
         <div class="cv-list">
-          <article class="cv-item reveal">
-            <div class="cv-item-head"><div><h3 class="cv-org"><span class="i18n-zh">西南财经大学 计算机与人工智能学院</span><span class="i18n-en">School of Computing and Artificial Intelligence, Southwestern University of Finance and Economics</span></h3><p class="cv-role"><span class="i18n-zh">科研助理</span><span class="i18n-en">Research Assistant</span></p><p class="cv-location"><span class="i18n-zh">中国 成都</span><span class="i18n-en">Chengdu, China</span></p></div><div class="cv-date">2025.12 — <span class="i18n-zh">至今</span><span class="i18n-en">Present</span></div></div>
+          <article class="cv-item">
+            <div class="cv-item-head">
+              <div>
+                <h3 class="cv-org"><span class="i18n-zh">西南财经大学 · 计算机与人工智能学院</span><span class="i18n-en">SWUFE · School of Computing and Artificial Intelligence</span></h3>
+                <p class="cv-role"><span class="i18n-zh">科研助理</span><span class="i18n-en">Research Assistant</span></p>
+                <p class="cv-location"><span class="i18n-zh">中国 · 成都</span><span class="i18n-en">Chengdu, China</span></p>
+              </div>
+              <div class="cv-date">2025.12 — Present</div>
+            </div>
+
             <ul class="cv-bullets">
-              <li><span class="i18n-zh"><strong>研究方向：</strong>脉冲神经网络（Spiking Neural Networks, SNN）的对抗攻击与鲁棒性，重点研究其时空动态、离散脉冲表示及替代梯度机制对攻击有效性和鲁棒性评估的影响。</span><span class="i18n-en"><strong>Research focus:</strong> Adversarial attacks and robustness of Spiking Neural Networks (SNNs), with particular attention to how spatiotemporal dynamics, discrete spike representations, and surrogate-gradient mechanisms affect attack effectiveness and robustness evaluation.</span></li>
-              <li><span class="i18n-zh">系统研究基于梯度的白盒对抗攻击在 SNN 中的适用性，分析 BPTT 梯度获取、替代梯度、梯度消失以及连续输入扰动与离散脉冲表示之间的不兼容问题，并比较不同梯度构造方式下的攻击效果。</span><span class="i18n-en">Systematically study the applicability of gradient-based white-box adversarial attacks to SNNs; analyze BPTT gradient acquisition, surrogate gradients, gradient vanishing, and the incompatibility between continuous input perturbations and discrete spike representations; and compare attack effectiveness under different gradient-construction methods.</span></li>
-              <li><span class="i18n-zh">基于 CIFAR-10 与 VGG11、WRN16 等 SNN 架构开展攻防实验，实现并评估 FGSM、PGD、BIM、APGD、SA-PGD 等多种对抗攻击方法，并比较 ASSG、BPTT、BPTR 等不同梯度机制下模型的攻击成功率与鲁棒准确率。</span><span class="i18n-en">Conduct attack-and-defense experiments on CIFAR-10 using SNN architectures including VGG11 and WRN16; implement and evaluate multiple adversarial attacks including FGSM, PGD, BIM, APGD, and SA-PGD; and compare attack success rates and robust accuracy under gradient mechanisms including ASSG, BPTT, and BPTR.</span></li>
-              <li><span class="i18n-zh">研究 MPD-SGR 等面向 SNN 的扰动/梯度优化机制，并结合 PGD adversarial training 开展对抗训练实验，系统比较 AT 与 no-AT、不同模型结构及不同攻击强度下模型的 clean accuracy 与 robust accuracy。</span><span class="i18n-en">Study perturbation/gradient optimization mechanisms for SNNs such as MPD-SGR and conduct adversarial-training experiments together with PGD adversarial training, systematically comparing clean accuracy and robust accuracy across AT versus no-AT settings, model architectures, and attack strengths.</span></li>
-              <li><span class="i18n-zh">搭建统一的对抗鲁棒性评测流程，对攻击预算、迭代步数、扰动范数及攻击成功率等指标进行标准化控制，并通过扰动样本可视化与实验结果分析检验攻击有效性与模型鲁棒性。</span><span class="i18n-en">Build a unified adversarial-robustness evaluation pipeline with standardized control over attack budget, iteration count, perturbation norms, attack success rate, and related metrics, and validate attack effectiveness and model robustness through adversarial-sample visualization and experimental analysis.</span></li>
+              <li><span class="i18n-zh"><strong>研究方向：</strong>脉冲神经网络（Spiking Neural Networks, SNN）的对抗攻击与鲁棒性，重点研究其时空动态、离散脉冲表示及替代梯度机制对攻击有效性和鲁棒性评估的影响。</span><span class="i18n-en"><strong>Research focus:</strong> Adversarial attacks and robustness of Spiking Neural Networks (SNNs), with emphasis on how spatiotemporal dynamics, discrete spike representations, and surrogate-gradient mechanisms affect attack effectiveness and robustness evaluation.</span></li>
+              <li><span class="i18n-zh">系统研究基于梯度的白盒对抗攻击在 SNN 中的适用性，分析 BPTT 梯度获取、替代梯度、梯度消失以及连续输入扰动与离散脉冲表示之间的不兼容问题，并比较不同梯度构造方式下的攻击效果。</span><span class="i18n-en">Systematically study gradient-based white-box adversarial attacks for SNNs, including BPTT gradient extraction, surrogate gradients, vanishing gradients, and incompatibility between continuous input perturbations and discrete spike representations; compare attack effectiveness under different gradient constructions.</span></li>
+              <li><span class="i18n-zh">基于 CIFAR-10 与 VGG11、WRN16 等 SNN 架构开展攻防实验，实现并评估 FGSM、PGD、BIM、APGD、SA-PGD 等多种对抗攻击方法，并比较 ASSG、BPTT、BPTR 等不同梯度机制下模型的攻击成功率与鲁棒准确率。</span><span class="i18n-en">Conduct attack-and-defense experiments on CIFAR-10 with SNN architectures including VGG11 and WRN16; implement and evaluate FGSM, PGD, BIM, APGD, and SA-PGD, and compare attack success rate and robust accuracy under ASSG, BPTT, and BPTR gradient mechanisms.</span></li>
+              <li><span class="i18n-zh">研究 MPD-SGR 等面向 SNN 的扰动/梯度优化机制，并结合 PGD adversarial training 开展对抗训练实验，系统比较 AT 与 no-AT、不同模型结构及不同攻击强度下模型的 clean accuracy 与 robust accuracy。</span><span class="i18n-en">Study perturbation/gradient optimization mechanisms for SNNs such as MPD-SGR, and combine them with PGD adversarial training to compare clean and robust accuracy across AT/no-AT settings, model architectures, and attack strengths.</span></li>
+              <li><span class="i18n-zh">搭建统一的对抗鲁棒性评测流程，对攻击预算、迭代步数、扰动范数及攻击成功率等指标进行标准化控制，并通过扰动样本可视化与实验结果分析检验攻击有效性与模型鲁棒性。</span><span class="i18n-en">Build a unified robustness-evaluation pipeline with standardized control of attack budget, iteration count, perturbation norm, and attack success rate; validate attack effectiveness and model robustness through perturbed-sample visualization and experimental analysis.</span></li>
             </ul>
           </article>
 
-          <article class="cv-item reveal">
-            <div class="cv-item-head"><div><h3 class="cv-org"><span class="i18n-zh">西南财经大学统计与数据科学学院</span><span class="i18n-en">School of Statistics and Data Science, Southwestern University of Finance and Economics</span></h3><p class="cv-role"><span class="i18n-zh">科研助理</span><span class="i18n-en">Research Assistant</span></p><p class="cv-location"><span class="i18n-zh">中国 成都</span><span class="i18n-en">Chengdu, China</span></p></div><div class="cv-date">2024.10 — <span class="i18n-zh">至今</span><span class="i18n-en">Present</span></div></div>
+          <article class="cv-item">
+            <div class="cv-item-head">
+              <div>
+                <h3 class="cv-org"><span class="i18n-zh">西南财经大学 · 统计与数据科学学院</span><span class="i18n-en">SWUFE · School of Statistics and Data Science</span></h3>
+                <p class="cv-role"><span class="i18n-zh">科研助理</span><span class="i18n-en">Research Assistant</span></p>
+                <p class="cv-location"><span class="i18n-zh">中国 · 成都</span><span class="i18n-en">Chengdu, China</span></p>
+              </div>
+              <div class="cv-date">2024.10 — Present</div>
+            </div>
             <ul class="cv-bullets">
-              <li><span class="i18n-zh"><strong>工作论文：</strong>《中国城乡相对贫困的测度与脆弱性：基于“环境—努力”双重框架的分析》（撰写与修改中）</span><span class="i18n-en"><strong>Working paper:</strong> “Measurement and Vulnerability of Relative Poverty in Urban and Rural China: An Analysis Based on the Dual ‘Circumstances–Effort’ Framework” (in drafting and revision).</span></li>
-              <li><span class="i18n-zh"><strong>数据处理与指标构建：</strong>使用 Python 与 Stata 处理 CFPS 微观调查数据，完成样本筛选、缺失值处理、数据匹配及变量构建；结合全国中位收入与购买力指数测算省级城乡相对贫困线，并构建贫困脆弱性相关指标。</span><span class="i18n-en"><strong>Data processing and indicator construction:</strong> Use Python and Stata to process CFPS micro-survey data, including sample screening, missing-value treatment, data matching, and variable construction; estimate provincial urban and rural relative-poverty lines using national median income and purchasing-power indices; and construct indicators related to poverty vulnerability.</span></li>
-              <li><span class="i18n-zh"><strong>统计建模与分解分析：</strong>构建回归模型分析环境、努力及家庭特征与贫困脆弱性之间的关系，并采用 Shapley 分解量化不同因素的相对贡献。</span><span class="i18n-en"><strong>Statistical modeling and decomposition analysis:</strong> Build regression models to analyze the relationships among circumstances, effort, household characteristics, and poverty vulnerability, and use Shapley decomposition to quantify the relative contribution of different factors.</span></li>
-              <li><span class="i18n-zh"><strong>稳健性与异质性分析：</strong>通过替换指标设定、调整样本及模型设定开展稳健性检验，并从城乡、地区及不同家庭特征维度进行异质性分析，检验主要实证结论的稳定性。</span><span class="i18n-en"><strong>Robustness and heterogeneity analysis:</strong> Conduct robustness checks by replacing indicator definitions and adjusting samples and model specifications, and perform heterogeneity analysis across urban/rural areas, regions, and household characteristics to assess the stability of the main empirical findings.</span></li>
+              <li><span class="i18n-zh"><strong>工作论文：</strong>《中国城乡相对贫困的测度与脆弱性：基于“环境—努力”双重框架的分析》（撰写与修改中）。</span><span class="i18n-en"><strong>Working paper:</strong> “Measurement and Vulnerability of Relative Poverty in Urban and Rural China: An Analysis Based on an Environment–Effort Dual Framework” (in preparation and revision).</span></li>
+              <li><span class="i18n-zh"><strong>数据处理与指标构建：</strong>使用 Python 与 Stata 处理 CFPS 微观调查数据，完成样本筛选、缺失值处理、数据匹配及变量构建；结合全国中位收入与购买力指数测算省级城乡相对贫困线，并构建贫困脆弱性相关指标。</span><span class="i18n-en"><strong>Data processing and indicator construction:</strong> Process CFPS micro-survey data using Python and Stata, including sample screening, missing-value treatment, data matching, and variable construction; estimate provincial urban/rural relative-poverty lines using national median income and purchasing-power indices, and construct poverty-vulnerability indicators.</span></li>
+              <li><span class="i18n-zh"><strong>统计建模与分解分析：</strong>构建回归模型分析环境、努力及家庭特征与贫困脆弱性之间的关系，并采用 Shapley 分解量化不同因素的相对贡献。</span><span class="i18n-en"><strong>Statistical modeling and decomposition:</strong> Build regression models to analyze relationships among environment, effort, household characteristics, and poverty vulnerability; use Shapley decomposition to quantify relative contributions of different factors.</span></li>
+              <li><span class="i18n-zh"><strong>稳健性与异质性分析：</strong>通过替换指标设定、调整样本及模型设定开展稳健性检验，并从城乡、地区及不同家庭特征维度进行异质性分析，检验主要实证结论的稳定性。</span><span class="i18n-en"><strong>Robustness and heterogeneity:</strong> Conduct robustness checks by replacing indicator definitions and adjusting samples/model specifications, and perform heterogeneity analysis across urban/rural status, regions, and household characteristics.</span></li>
             </ul>
           </article>
 
-          <article class="cv-item reveal">
-            <div class="cv-item-head"><div><h3 class="cv-org"><span class="i18n-zh">西南财经大学 管理工程与科学学院</span><span class="i18n-en">School of Management Engineering and Science, Southwestern University of Finance and Economics</span></h3><p class="cv-role"><span class="i18n-zh">科研助理</span><span class="i18n-en">Research Assistant</span></p><p class="cv-location"><span class="i18n-zh">中国 成都</span><span class="i18n-en">Chengdu, China</span></p></div><div class="cv-date">2026.06 — <span class="i18n-zh">至今</span><span class="i18n-en">Present</span></div></div>
+          <article class="cv-item">
+            <div class="cv-item-head">
+              <div>
+                <h3 class="cv-org"><span class="i18n-zh">西南财经大学 · 管理工程与科学学院</span><span class="i18n-en">SWUFE · School of Management Science and Engineering</span></h3>
+                <p class="cv-role"><span class="i18n-zh">科研助理</span><span class="i18n-en">Research Assistant</span></p>
+                <p class="cv-location"><span class="i18n-zh">中国 · 成都</span><span class="i18n-en">Chengdu, China</span></p>
+              </div>
+              <div class="cv-date">2026.06 — Present</div>
+            </div>
             <ul class="cv-bullets">
-              <li><span class="i18n-zh"><strong>研究方向：</strong>管理科学与运筹优化，关注供应链多主体决策、平台运营与投入产出策略。</span><span class="i18n-en"><strong>Research focus:</strong> Management science and operations optimization, with a focus on multi-agent supply-chain decision making, platform operations, and input-output strategies.</span></li>
-              <li><span class="i18n-zh">构建包含商家、物流服务商与平台等主体的供应链博弈模型，研究循环包装、新能源运输等不同运营策略下各参与主体的最优决策与利润变化。</span><span class="i18n-en">Construct supply-chain game models involving merchants, logistics service providers, and platforms, and study the optimal decisions and profit changes of each participant under different operating strategies such as reusable packaging and new-energy transportation.</span></li>
-              <li><span class="i18n-zh">基于博弈论与优化方法推导不同情景下的均衡解，分析固定投入成本、运营成本及相关参数对物流服务商与平台进入决策的影响，并进一步刻画不同策略成立的参数区间与准入门槛。</span><span class="i18n-en">Derive equilibrium solutions under different scenarios using game theory and optimization methods; analyze how fixed investment costs, operating costs, and related parameters affect the entry decisions of logistics service providers and platforms; and further characterize the parameter regions and entry thresholds under which different strategies are viable.</span></li>
+              <li><span class="i18n-zh"><strong>研究方向：</strong>管理科学与运筹优化，关注供应链多主体决策、平台运营与投入产出策略。</span><span class="i18n-en"><strong>Research focus:</strong> Management science and operations research, focusing on multi-agent supply-chain decisions, platform operations, and investment/output strategies.</span></li>
+              <li><span class="i18n-zh">构建包含商家、物流服务商与平台等主体的供应链博弈模型，研究循环包装、新能源运输等不同运营策略下各参与主体的最优决策与利润变化。</span><span class="i18n-en">Construct supply-chain game models involving merchants, logistics providers, and platforms to study optimal decisions and profit changes under strategies such as reusable packaging and new-energy transportation.</span></li>
+              <li><span class="i18n-zh">基于博弈论与优化方法推导不同情景下的均衡解，分析固定投入成本、运营成本及相关参数对物流服务商与平台进入决策的影响，并进一步刻画不同策略成立的参数区间与准入门槛。</span><span class="i18n-en">Derive equilibrium solutions under different scenarios using game theory and optimization, analyze how fixed investment costs, operating costs, and parameters affect entry decisions, and characterize parameter regions and entry thresholds for different strategies.</span></li>
             </ul>
           </article>
 
-          <article class="cv-item reveal">
-            <div class="cv-item-head"><div><h3 class="cv-org"><span class="i18n-zh">国家级大学生创新创业训练计划</span><span class="i18n-en">National College Student Innovation and Entrepreneurship Training Program</span></h3><p class="cv-role"><span class="i18n-zh">项目负责人</span><span class="i18n-en">Project Leader</span></p><p class="cv-location"><span class="i18n-zh">中国 成都</span><span class="i18n-en">Chengdu, China</span></p></div><div class="cv-date">2025.04 — <span class="i18n-zh">至今</span><span class="i18n-en">Present</span></div></div>
+          <article class="cv-item">
+            <div class="cv-item-head">
+              <div>
+                <h3 class="cv-org"><span class="i18n-zh">国家级大学生创新创业训练计划</span><span class="i18n-en">National Undergraduate Innovation and Entrepreneurship Training Program</span></h3>
+                <p class="cv-role"><span class="i18n-zh">项目负责人</span><span class="i18n-en">Project Lead</span></p>
+                <p class="cv-location"><span class="i18n-zh">中国 · 成都</span><span class="i18n-en">Chengdu, China</span></p>
+              </div>
+              <div class="cv-date">2025.04 — Present</div>
+            </div>
             <ul class="cv-bullets">
-              <li><span class="i18n-zh"><strong>项目名称：</strong>《银发经济政策工具对家庭投资与消费决策的影响》</span><span class="i18n-en"><strong>Project:</strong> “The Impact of Silver-Economy Policy Instruments on Household Investment and Consumption Decisions.”</span></li>
-              <li><span class="i18n-zh"><strong>研究方法：</strong>查阅文献；使用 Python 和 Stata 清洗 CHARLS、CHFS、CFPS 数据；使用 DID 方法进行识别分析。</span><span class="i18n-en"><strong>Methods:</strong> Conduct literature review; use Python and Stata to clean CHARLS, CHFS, and CFPS data; and use difference-in-differences (DID) methods for identification analysis.</span></li>
-              <li><span class="i18n-zh"><strong>研究目标：</strong>考察银发经济政策工具是否对家庭投资与消费产生外溢效应，以及其是否在家庭内部存在代际传导。</span><span class="i18n-en"><strong>Objective:</strong> Examine whether silver-economy policy instruments generate spillover effects on household investment and consumption and whether such effects are transmitted across generations within households.</span></li>
+              <li><span class="i18n-zh"><strong>项目名称：</strong>《银发经济政策工具对家庭投资与消费决策的影响》。</span><span class="i18n-en"><strong>Project:</strong> “The Impact of Silver-Economy Policy Instruments on Household Investment and Consumption Decisions.”</span></li>
+              <li><span class="i18n-zh"><strong>研究方法：</strong>查阅文献；使用 Python 和 Stata 清洗 CHARLS、CHFS、CFPS 数据；使用 DID 方法进行识别分析。</span><span class="i18n-en"><strong>Methods:</strong> Literature review; clean CHARLS, CHFS, and CFPS data using Python and Stata; conduct identification analysis using DID.</span></li>
+              <li><span class="i18n-zh"><strong>研究目标：</strong>考察银发经济政策工具是否对家庭投资与消费产生外溢效应，以及其是否在家庭内部存在代际传导。</span><span class="i18n-en"><strong>Objective:</strong> Examine whether silver-economy policy instruments generate spillover effects on household investment and consumption and whether effects are transmitted across generations within households.</span></li>
             </ul>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section page-width" id="competitions">
-      <div class="section-heading reveal"><span class="section-index">02</span><div><p class="kicker">COMPETITIONS</p><h2><span class="i18n-zh">竞赛经历</span><span class="i18n-en">Competition Experience</span></h2></div></div>
-      <div class="cv-list">
-        <article class="cv-item reveal">
-          <div class="cv-item-head"><div><h3 class="cv-org"><span class="i18n-zh">第二十一届“花旗杯”金融创新应用大赛</span><span class="i18n-en">21st Citi Financial Innovation Application Competition</span></h3><p class="cv-role"><span class="i18n-zh">团队成员</span><span class="i18n-en">Team Member</span></p><p class="cv-location"><span class="i18n-zh">中国 成都</span><span class="i18n-en">Chengdu, China</span></p></div><div class="cv-date">2026.01 — 2026.04</div></div>
-          <ul class="cv-bullets">
-            <li><span class="i18n-zh"><strong>项目名称：</strong>《数智慧眼：基于公开数据知识图谱与大语言模型的上市企业反欺诈预警平台》</span><span class="i18n-en"><strong>Project:</strong> “Data Intelligence Eye: An Anti-Fraud Early-Warning Platform for Listed Companies Based on Public-Data Knowledge Graphs and Large Language Models.”</span></li>
-            <li><span class="i18n-zh"><strong>项目目标：</strong>开发基于知识图谱（Knowledge Graph）与大语言模型（LLM）融合的智能金融风险识别平台，用于上市公司欺诈行为检测</span><span class="i18n-en"><strong>Objective:</strong> Develop an intelligent financial-risk identification platform integrating Knowledge Graphs and Large Language Models (LLMs) for fraud detection in listed companies.</span></li>
-            <li><span class="i18n-zh"><strong>项目内容：</strong>构建包含 20+类实体与 111 类关系的异构知识图谱，实现对关联交易与团伙欺诈行为的图结构挖掘与识别；实现基于 RAG（检索增强生成）框架的大模型应用，有效提升模型事实一致性并缓解幻觉问题；设计融合结构化数据（财务、工商）与非结构化数据（财报文本、法律文书、舆情）的多源数据处理管道（600+特征）；构建融合规则引擎、图谱特征与 LLM 推理能力的混合风险评分模型（0–100 分）</span><span class="i18n-en"><strong>Project content:</strong> Construct a heterogeneous knowledge graph containing 20+ entity types and 111 relation types to mine and identify graph structures associated with related-party transactions and group fraud; implement an LLM application based on a RAG (retrieval-augmented generation) framework to improve factual consistency and mitigate hallucination; design a multi-source data-processing pipeline integrating structured data (financial and business-registration data) with unstructured data (financial-report text, legal documents, and public-opinion data), generating 600+ features; and construct a hybrid risk-scoring model (0–100) integrating a rule engine, graph features, and LLM reasoning.</span></li>
-            <li><span class="i18n-zh"><strong>项目成果：</strong>整体风险识别准确率超过 90%;团伙欺诈识别准确率达到≥78%;风险识别周期由“数周级”缩短至“小时级”,并基于大语言模型推理生成可解释性风险分析报告，显著提升模型透明性与监管合规性。</span><span class="i18n-en"><strong>Results:</strong> Overall risk-identification accuracy exceeded 90%; group-fraud identification accuracy reached at least 78%; the risk-identification cycle was shortened from a matter of weeks to a matter of hours; and interpretable risk-analysis reports were generated through LLM reasoning, substantially improving model transparency and regulatory compliance.</span></li>
-          </ul>
-        </article>
-
-        <article class="cv-item reveal">
-          <div class="cv-item-head"><div><h3 class="cv-org"><span class="i18n-zh">美国大学生数学建模竞赛（MCM/ICM）</span><span class="i18n-en">Mathematical Contest in Modeling / Interdisciplinary Contest in Modeling (MCM/ICM)</span></h3><p class="cv-role"><span class="i18n-zh">S 奖</span><span class="i18n-en">Successful Participant (S Award)</span></p></div><div class="cv-date">2025.01</div></div>
-          <ul class="cv-bullets">
-            <li><span class="i18n-zh"><strong>论文题目：</strong>《基于数据的网络安全政策效能评估》</span><span class="i18n-en"><strong>Paper:</strong> “Data-Driven Evaluation of Cybersecurity Policy Effectiveness.”</span></li>
-            <li><span class="i18n-zh"><strong>方法：</strong>使用 Stata 和 SPSS 对数据进行描述性统计和处理；利用 Python 基于熵权法构建对应指数，使用聚类分析识别政策类型；利用 Stata，使用 DID 模型评估政策影响。</span><span class="i18n-en"><strong>Methods:</strong> Use Stata and SPSS for descriptive statistics and data processing; use Python to construct corresponding indices based on the entropy-weight method and clustering analysis to identify policy types; and use Stata to estimate DID models evaluating policy effects.</span></li>
-          </ul>
-        </article>
-
-        <article class="cv-item reveal">
-          <div class="cv-item-head"><div><h3 class="cv-org"><span class="i18n-zh">第 16 届全国大学生数学竞赛</span><span class="i18n-en">16th National College Students Mathematics Competition</span></h3><p class="cv-role"><span class="i18n-zh">四川省三等奖</span><span class="i18n-en">Third Prize, Sichuan Province</span></p></div><div class="cv-date">2024.11</div></div>
-        </article>
-      </div>
-    </section>
-
-    <section class="section section-soft" id="internship">
+    <section class="section">
       <div class="page-width">
-        <div class="section-heading reveal"><span class="section-index">03</span><div><p class="kicker">INTERNSHIP</p><h2><span class="i18n-zh">实习经历</span><span class="i18n-en">Internship Experience</span></h2></div></div>
-        <article class="cv-item reveal">
-          <div class="cv-item-head"><div><h3 class="cv-org"><span class="i18n-zh">申万宏源证券总部·资金营运部</span><span class="i18n-en">Shenwan Hongyuan Securities Headquarters · Treasury Operations Department</span></h3><p class="cv-role"><span class="i18n-zh">实习生</span><span class="i18n-en">Intern</span></p><p class="cv-location"><span class="i18n-zh">中国 上海</span><span class="i18n-en">Shanghai, China</span></p></div><div class="cv-date">2025.07 — 2025.08</div></div>
+        <div class="section-heading">
+          <span class="section-index">02</span>
+          <div><p class="kicker">COMPETITIONS</p><h2><span class="i18n-zh">竞赛经历</span><span class="i18n-en">Competitions</span></h2></div>
+        </div>
+
+        <div class="cv-list">
+          <article class="cv-item">
+            <div class="cv-item-head">
+              <div>
+                <h3 class="cv-org"><span class="i18n-zh">第二十一届“花旗杯”金融创新应用大赛</span><span class="i18n-en">21st Citi Financial Innovation Application Competition</span></h3>
+                <p class="cv-role"><span class="i18n-zh">团队成员</span><span class="i18n-en">Team Member</span></p>
+              </div>
+              <div class="cv-date">2026.01 — 2026.04</div>
+            </div>
+            <ul class="cv-bullets">
+              <li><span class="i18n-zh"><strong>项目名称：</strong>《数智慧眼：基于公开数据知识图谱与大语言模型的上市企业反欺诈预警平台》。</span><span class="i18n-en"><strong>Project:</strong> “Data Intelligence Eye: A Public-Data Knowledge-Graph and LLM-Based Anti-Fraud Early-Warning Platform for Listed Companies.”</span></li>
+              <li><span class="i18n-zh"><strong>项目目标：</strong>开发基于知识图谱（Knowledge Graph）与大语言模型（LLM）融合的智能金融风险识别平台，用于上市公司欺诈行为检测。</span><span class="i18n-en"><strong>Objective:</strong> Develop an intelligent financial-risk identification platform combining knowledge graphs and LLMs for listed-company fraud detection.</span></li>
+              <li><span class="i18n-zh"><strong>项目内容：</strong>构建包含 20+ 类实体与 111 类关系的异构知识图谱，实现对关联交易与团伙欺诈行为的图结构挖掘与识别；实现基于 RAG（检索增强生成）框架的大模型应用，有效提升模型事实一致性并缓解幻觉问题；设计融合结构化数据（财务、工商）与非结构化数据（财报文本、法律文书、舆情）的多源数据处理管道（600+ 特征）；构建融合规则引擎、图谱特征与 LLM 推理能力的混合风险评分模型（0–100 分）。</span><span class="i18n-en"><strong>Implementation:</strong> Build a heterogeneous knowledge graph with 20+ entity types and 111 relation types; mine graph structures for related-party transactions and organized fraud; implement a RAG-based LLM application to improve factual consistency and mitigate hallucination; design a multi-source pipeline combining structured data (financial and corporate registry) and unstructured data (annual reports, legal documents, public opinion) with 600+ features; construct a hybrid 0–100 risk-scoring model integrating rules, graph features, and LLM reasoning.</span></li>
+              <li><span class="i18n-zh"><strong>项目成果：</strong>整体风险识别准确率超过 90%；团伙欺诈识别准确率达到 ≥78%；风险识别周期由“数周级”缩短至“小时级”，并基于大语言模型推理生成可解释性风险分析报告。</span><span class="i18n-en"><strong>Results:</strong> Overall risk-identification accuracy exceeded 90%; organized-fraud identification accuracy reached ≥78%; the risk-identification cycle was reduced from weeks to hours; LLM reasoning generated interpretable risk-analysis reports.</span></li>
+            </ul>
+          </article>
+
+          <article class="cv-item">
+            <div class="cv-item-head">
+              <div>
+                <h3 class="cv-org"><span class="i18n-zh">美国大学生数学建模竞赛（MCM/ICM）</span><span class="i18n-en">Mathematical Contest in Modeling (MCM/ICM)</span></h3>
+                <p class="cv-role">S Award</p>
+              </div>
+              <div class="cv-date">2025.01</div>
+            </div>
+            <ul class="cv-bullets">
+              <li><span class="i18n-zh"><strong>论文题目：</strong>《基于数据的网络安全政策效能评估》。</span><span class="i18n-en"><strong>Paper:</strong> “Data-Driven Evaluation of Cybersecurity Policy Effectiveness.”</span></li>
+              <li><span class="i18n-zh"><strong>方法：</strong>使用 Stata 和 SPSS 对数据进行描述性统计和处理；利用 Python 基于熵权法构建对应指数，使用聚类分析识别政策类型；利用 Stata，使用 DID 模型评估政策影响。</span><span class="i18n-en"><strong>Methods:</strong> Descriptive statistics and preprocessing in Stata/SPSS; entropy-weight indices and clustering in Python to identify policy types; DID estimation in Stata to evaluate policy impacts.</span></li>
+            </ul>
+          </article>
+
+          <article class="cv-item">
+            <div class="cv-item-head">
+              <div>
+                <h3 class="cv-org"><span class="i18n-zh">第 16 届全国大学生数学竞赛</span><span class="i18n-en">16th National College Students Mathematics Competition</span></h3>
+                <p class="cv-role"><span class="i18n-zh">四川省三等奖</span><span class="i18n-en">Third Prize, Sichuan Province</span></p>
+              </div>
+              <div class="cv-date">2024.11</div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft">
+      <div class="page-width">
+        <div class="section-heading">
+          <span class="section-index">03</span>
+          <div><p class="kicker">INTERNSHIP</p><h2><span class="i18n-zh">实习经历</span><span class="i18n-en">Internship</span></h2></div>
+        </div>
+
+        <article class="cv-item">
+          <div class="cv-item-head">
+            <div>
+              <h3 class="cv-org"><span class="i18n-zh">申万宏源证券总部 · 资金营运部</span><span class="i18n-en">Shenwan Hongyuan Securities Headquarters · Funds Operation Department</span></h3>
+              <p class="cv-role"><span class="i18n-zh">实习生</span><span class="i18n-en">Intern</span></p>
+              <p class="cv-location"><span class="i18n-zh">中国 · 上海</span><span class="i18n-en">Shanghai, China</span></p>
+            </div>
+            <div class="cv-date">2025.07 — 2025.08</div>
+          </div>
           <ul class="cv-bullets">
-            <li><span class="i18n-zh"><strong>金融数据处理：</strong>使用 Excel 与 Python 对存量债券、短期融资券及公司债等多源金融数据进行清洗、整理与结构化处理，完成关键字段匹配、数据汇总与基础统计分析。</span><span class="i18n-en"><strong>Financial data processing:</strong> Use Excel and Python to clean, organize, and structure multi-source financial data on outstanding bonds, short-term financing bills, corporate bonds, and related instruments, completing key-field matching, data aggregation, and basic statistical analysis.</span></li>
-            <li><span class="i18n-zh"><strong>指标构建与分析：</strong>基于债券期限、到期规模及融资结构等变量，构建债务期限结构、再融资规划及市场监测指标，辅助分析不同期限债务分布及潜在再融资压力。</span><span class="i18n-en"><strong>Indicator construction and analysis:</strong> Build indicators for debt-maturity structure, refinancing planning, and market monitoring based on variables such as bond maturity, maturity amount, and financing structure, supporting analysis of debt distribution across maturities and potential refinancing pressure.</span></li>
-            <li><span class="i18n-zh"><strong>市场数据分析：</strong>整理每日现券市场成交数据与市场信息，对重点券种、成交情况及市场变化进行归纳分析，并形成每日现券市场交易简报。</span><span class="i18n-en"><strong>Market data analysis:</strong> Organize daily cash-bond market transaction data and market information, summarize and analyze key bond issues, trading conditions, and market changes, and prepare daily cash-bond market trading briefs.</span></li>
-            <li><span class="i18n-zh"><strong>债券市场研究：</strong>整理公募债发行材料及相关监管文件，熟悉债券产品分类、发行规则及债券市场主要数据指标，为后续金融数据分析与市场研究提供业务基础。</span><span class="i18n-en"><strong>Bond-market research:</strong> Organize public-bond issuance materials and relevant regulatory documents; become familiar with bond-product classifications, issuance rules, and major bond-market data indicators; and build a business foundation for subsequent financial-data analysis and market research.</span></li>
+            <li><span class="i18n-zh"><strong>金融数据处理：</strong>使用 Excel 与 Python 对存量债券、短期融资券及公司债等多源金融数据进行清洗、整理与结构化处理，完成关键字段匹配、数据汇总与基础统计分析。</span><span class="i18n-en"><strong>Financial data processing:</strong> Clean, organize, and structure multi-source bond data using Excel and Python, including field matching, aggregation, and basic statistical analysis.</span></li>
+            <li><span class="i18n-zh"><strong>指标构建与分析：</strong>基于债券期限、到期规模及融资结构等变量，构建债务期限结构、再融资规划及市场监测指标，辅助分析不同期限债务分布及潜在再融资压力。</span><span class="i18n-en"><strong>Indicator construction:</strong> Build debt-maturity-structure, refinancing-planning, and market-monitoring indicators from bond maturity, due amount, and financing-structure variables.</span></li>
+            <li><span class="i18n-zh"><strong>市场数据分析：</strong>整理每日现券市场成交数据与市场信息，对重点券种、成交情况及市场变化进行归纳分析，并形成每日现券市场交易简报。</span><span class="i18n-en"><strong>Market analysis:</strong> Summarize daily cash-bond transactions and market information, analyze key securities and market movements, and prepare daily trading briefs.</span></li>
+            <li><span class="i18n-zh"><strong>债券市场研究：</strong>整理公募债发行材料及相关监管文件，熟悉债券产品分类、发行规则及债券市场主要数据指标。</span><span class="i18n-en"><strong>Bond-market research:</strong> Review public-bond issuance materials and regulatory documents, gaining familiarity with product classifications, issuance rules, and key market indicators.</span></li>
           </ul>
         </article>
       </div>
     </section>
 
-    <section class="section page-width" id="overseas">
-      <div class="section-heading reveal"><span class="section-index">04</span><div><p class="kicker">OVERSEAS PROGRAMS</p><h2><span class="i18n-zh">海外交流经历</span><span class="i18n-en">Overseas Programs</span></h2></div></div>
-      <div class="cv-list">
-        <article class="cv-item reveal">
-          <div class="cv-item-head"><div><h3 class="cv-org"><span class="i18n-zh">英国剑桥大学暑期交流</span><span class="i18n-en">University of Cambridge Summer Program</span></h3><p class="cv-role"><span class="i18n-zh">项目组组长</span><span class="i18n-en">Project Team Leader</span></p><p class="cv-location"><span class="i18n-zh">英国 剑桥</span><span class="i18n-en">Cambridge, United Kingdom</span></p></div><div class="cv-date">2025.08</div></div>
-          <ul class="cv-bullets">
-            <li><span class="i18n-zh"><strong>课程方向：</strong>FIN+AI（金融与人工智能）；以量化研究型小组项目形式完成课程研究，担任项目组组长，负责成员分工、研究进度协调与成果整合。</span><span class="i18n-en"><strong>Program focus:</strong> FIN+AI (Finance and Artificial Intelligence); completed course research through a quantitative research-group project and served as project team leader, responsible for task allocation, research-progress coordination, and integration of final outputs.</span></li>
-            <li><span class="i18n-zh"><strong>团队课题：</strong>《媒体情绪框架对证券分析师判断的影响：基于 NLP 的证据》。</span><span class="i18n-en"><strong>Team project:</strong> “The Impact of Media Sentiment Framing on Securities Analysts’ Judgments: Evidence Based on NLP.”</span></li>
-            <li><span class="i18n-zh"><strong>数据与方法：</strong>带领团队从 CSMAR 收集分析师预测与研报数据，从 Wind 获取股票市场数据，并使用 Python 采集金融新闻；基于 SnowNLP 进行金融文本情绪识别，使用 Python 和 Stata 完成数据清洗、匹配与变量构造，并建立回归模型分析媒体情绪与分析师判断之间的关系。</span><span class="i18n-en"><strong>Data and methods:</strong> Led the team in collecting analyst forecasts and research-report data from CSMAR, obtaining stock-market data from Wind, and collecting financial news using Python; conducted financial-text sentiment identification using SnowNLP; used Python and Stata for data cleaning, matching, and variable construction; and built regression models to analyze the relationship between media sentiment and analyst judgment.</span></li>
-            <li><span class="i18n-zh"><strong>团队协作：</strong>在全英文课程环境中与教师及不同背景的组员沟通研究思路、协调任务进度并推进项目实施，提升英文沟通、跨文化协作及量化研究项目组织能力。</span><span class="i18n-en"><strong>Teamwork:</strong> Communicated research ideas with instructors and teammates from different backgrounds in a fully English-language course environment, coordinated task progress, and advanced project implementation, strengthening English communication, cross-cultural collaboration, and quantitative-research project-management skills.</span></li>
-          </ul>
-          <div class="cv-actions">
-            <a class="soft-button" href="./cambridge-album.html"><span class="i18n-zh">查看剑桥暑校生活专辑 →</span><span class="i18n-en">View Cambridge Summer Album →</span></a>
-          </div>
-        </article>
+    <section class="section">
+      <div class="page-width">
+        <div class="section-heading">
+          <span class="section-index">04</span>
+          <div><p class="kicker">OVERSEAS PROGRAMS</p><h2><span class="i18n-zh">海外交流经历</span><span class="i18n-en">Overseas Programs</span></h2></div>
+        </div>
 
-        <article class="cv-item reveal">
-          <div class="cv-item-head"><div><h3 class="cv-org"><span class="i18n-zh">美国德克萨斯大学奥斯汀分校寒假交流</span><span class="i18n-en">The University of Texas at Austin Winter Program</span></h3><p class="cv-role"><span class="i18n-zh">国际交流生</span><span class="i18n-en">International Exchange Student</span></p><p class="cv-location"><span class="i18n-zh">美国 奥斯汀</span><span class="i18n-en">Austin, United States</span></p></div><div class="cv-date">2026.01 — 2026.02</div></div>
-          <ul class="cv-bullets">
-            <li><span class="i18n-zh"><strong>课程项目：</strong>基于图像识别与深度学习方法搭建手写数字识别系统，并进一步开发面向小学生的简易数学口算训练软件，实现手写答案输入、数字识别、结果判断与反馈等功能。</span><span class="i18n-en"><strong>Course project:</strong> Built a handwritten-digit recognition system using image-recognition and deep-learning methods, and further developed a simple mental-arithmetic training application for primary-school students, implementing handwritten-answer input, digit recognition, result evaluation, and feedback functions.</span></li>
-            <li><span class="i18n-zh"><strong>项目实践：</strong>参与方案设计、Python/Java 程序实现、模型与软件功能调试及成果整合，了解从图像识别模型到实际应用系统的基本开发流程。</span><span class="i18n-en"><strong>Project practice:</strong> Participated in solution design, Python/Java implementation, model and software debugging, and integration of project outputs, gaining familiarity with the basic development process from image-recognition models to practical application systems.</span></li>
-            <li><span class="i18n-zh">在全英文学习及生活环境中持续进行团队讨论、任务协调与跨文化交流，提升英文沟通、团队协作及实际问题解决能力。</span><span class="i18n-en">Continued team discussions, task coordination, and cross-cultural communication in a fully English-language study and living environment, strengthening English communication, teamwork, and practical problem-solving skills.</span></li>
-          </ul>
-          <div class="cv-actions">
-            <a class="soft-button" href="./austin-album.html"><span class="i18n-zh">查看奥斯汀寒校生活专辑 →</span><span class="i18n-en">View Austin Winter Album →</span></a>
-          </div>
-        </article>
+        <div class="cv-list">
+          <article class="cv-item">
+            <div class="cv-item-head">
+              <div>
+                <h3 class="cv-org"><span class="i18n-zh">英国剑桥大学暑期交流</span><span class="i18n-en">University of Cambridge Summer Program</span></h3>
+                <p class="cv-role"><span class="i18n-zh">项目组组长</span><span class="i18n-en">Project Team Lead</span></p>
+                <p class="cv-location"><span class="i18n-zh">英国 · 剑桥</span><span class="i18n-en">Cambridge, United Kingdom</span></p>
+              </div>
+              <div class="cv-date">2025.08</div>
+            </div>
+            <ul class="cv-bullets">
+              <li><span class="i18n-zh"><strong>课程方向：</strong>FIN+AI（金融与人工智能）；以量化研究型小组项目形式完成课程研究，担任项目组组长，负责成员分工、研究进度协调与成果整合。</span><span class="i18n-en"><strong>Program focus:</strong> FIN+AI (Finance and Artificial Intelligence); completed a quantitative research group project as team lead, coordinating task allocation, research progress, and final integration.</span></li>
+              <li><span class="i18n-zh"><strong>团队课题：</strong>《媒体情绪框架对证券分析师判断的影响：基于 NLP 的证据》。</span><span class="i18n-en"><strong>Team project:</strong> “The Impact of Media Sentiment Framing on Securities Analysts’ Judgments: Evidence from NLP.”</span></li>
+              <li><span class="i18n-zh"><strong>数据与方法：</strong>带领团队从 CSMAR 收集分析师预测与研报数据，从 Wind 获取股票市场数据，并使用 Python 采集金融新闻；基于 SnowNLP 进行金融文本情绪识别，使用 Python 和 Stata 完成数据清洗、匹配与变量构造，并建立回归模型分析媒体情绪与分析师判断之间的关系。</span><span class="i18n-en"><strong>Data and methods:</strong> Lead collection of analyst forecasts/reports from CSMAR, stock-market data from Wind, and financial news via Python; use SnowNLP for sentiment analysis, Python/Stata for cleaning and variable construction, and regression models to study media sentiment and analyst judgment.</span></li>
+              <li><span class="i18n-zh"><strong>团队协作：</strong>在全英文课程环境中与教师及不同背景的组员沟通研究思路、协调任务进度并推进项目实施，提升英文沟通、跨文化协作及量化研究项目组织能力。</span><span class="i18n-en"><strong>Teamwork:</strong> Communicate research ideas with instructors and team members in an English-only environment, coordinate project progress, and strengthen cross-cultural collaboration and quantitative-project organization.</span></li>
+            </ul>
+            <a class="album-read-link" href="./cambridge-album.html">
+              <span class="i18n-zh">查看剑桥暑校生活专辑 →</span><span class="i18n-en">View Cambridge summer-life album →</span>
+            </a>
+          </article>
+
+          <article class="cv-item">
+            <div class="cv-item-head">
+              <div>
+                <h3 class="cv-org"><span class="i18n-zh">美国德克萨斯大学奥斯汀分校寒假交流</span><span class="i18n-en">The University of Texas at Austin Winter Program</span></h3>
+                <p class="cv-role"><span class="i18n-zh">国际交流生</span><span class="i18n-en">International Exchange Student</span></p>
+                <p class="cv-location"><span class="i18n-zh">美国 · 奥斯汀</span><span class="i18n-en">Austin, United States</span></p>
+              </div>
+              <div class="cv-date">2026.01 — 2026.02</div>
+            </div>
+            <ul class="cv-bullets">
+              <li><span class="i18n-zh"><strong>课程项目：</strong>基于图像识别与深度学习方法搭建手写数字识别系统，并进一步开发面向小学生的简易数学口算训练软件，实现手写答案输入、数字识别、结果判断与反馈等功能。</span><span class="i18n-en"><strong>Course project:</strong> Build a handwritten-digit recognition system using image recognition and deep learning, then develop a simple arithmetic-practice application for elementary students with handwriting input, digit recognition, answer evaluation, and feedback.</span></li>
+              <li><span class="i18n-zh"><strong>项目实践：</strong>参与方案设计、Python/Java 程序实现、模型与软件功能调试及成果整合，了解从图像识别模型到实际应用系统的基本开发流程。</span><span class="i18n-en"><strong>Project practice:</strong> Participate in solution design, Python/Java implementation, model/software debugging, and final integration, gaining experience in the workflow from vision models to application systems.</span></li>
+              <li><span class="i18n-zh">在全英文学习及生活环境中持续进行团队讨论、任务协调与跨文化交流，提升英文沟通、团队协作及实际问题解决能力。</span><span class="i18n-en">Engage in team discussions, task coordination, and cross-cultural communication in an English-language academic and living environment.</span></li>
+            </ul>
+            <a class="album-read-link" href="./austin-album.html">
+              <span class="i18n-zh">查看奥斯汀寒校生活专辑 →</span><span class="i18n-en">View Austin winter-life album →</span>
+            </a>
+          </article>
+        </div>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer"><div class="page-width footer-row"><span>© Frank Li</span><a href="mailto:lyzh0616@163.com">lyzh0616@163.com</a></div></footer>
+
+  <footer class="site-footer">
+    <div class="page-width footer-row">
+      <span>© Frank Li</span>
+      <span>Statistics · AI · Optimization</span>
+    </div>
+  </footer>
+
   <script src="./script.js"></script>
+
 </body>
 </html>
